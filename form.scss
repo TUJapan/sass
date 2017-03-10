@@ -1,0 +1,109 @@
+/**
+ * Styles for NetSuite form pages / Temple University, Japan Campus / ver. 4.0.
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+/**************************************************************************
+ * NetSuite form styles
+ **************************************************************************/
+html {
+	overflow-y: hidden;
+	background: #fffdf4 url(/img/noise.png) repeat 0 0;
+}
+html.ie6, html.ie7, html.ie8 { overflow: hidden; }
+
+#main { background: none; padding: 0; }
+.content { margin: 0; }
+
+
+/**************************************************************************
+ * NetSuite Fields
+**************************************************************************/
+/* general settings */
+#custentity_stu_title, #custentity_entity_fname, #custentity_entity_lname, #custentity_jfname, #custentity_jlname, #email, #custentity_stu_confirm_email, #phone, #altphone, #address1, #address2, #city, #state, #zipcode, #country, #custentity_stu_br_comments,
+#custentity_stu_occupation, #custentity_stu_occupation_j, #custentity_school_name, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted, #custentity_stu_webother_conted,
+#onlineForm103a, #onlineForm109a, #custentity_stu_conted_level_check, #custentity_stu_conted_is,
+#custentity_conted_pt_comments, #custentity_stu_contact_comments, #custentity_stu_is_comments, #custentity_stu_personal_statement {
+	font-size: 100%;
+	border: 1px solid #92896a;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* selection */
+#custentity_stu_title, #country, #custentity_stu_occupation, #custentity_stu_occupation_j, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted,
+#onlineForm103a, #onlineForm109a, #custentity_stu_conted_level_check, #custentity_stu_conted_is, #custentity_stu_info_session, #custentity_stu_currentvisastatus {
+	padding: 3px;
+}
+
+/* input text */
+#custentity_entity_fname, #custentity_entity_lname, #custentity_jfname, #custentity_jlname, #email, #custentity_stu_confirm_email, #phone, #altphone, #address1, #address2, #city, #state, #zipcode,
+#custentity_school_name, #custentity_stu_webother_conted, #custentity_stu_webhowheard_mba, #custentity_stu_webhowheard_j_mba {
+	padding: 5px;
+}
+
+/* textarea */
+#custentity_stu_br_comments, #custentity_conted_pt_comments, #custentity_stu_contact_comments, #custentity_stu_is_comments, #custentity_stu_contact_comments {
+	width: 95%;
+	height: 120px;
+	padding: 5px;
+}
+#main #custentity_stu_personal_statement { height: 400px; }
+
+/* width */
+#custentity_entity_fname, #custentity_entity_lname, #phone, #altphone, #city, #state, #zipcode {
+	width: 60%;
+}
+#email, #custentity_stu_confirm_email, #address1, #address2, #country, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted,
+#custentity_stu_conted_level_check, #custentity_stu_conted_is,
+#custentity_stu_webhowheard_mba, #custentity_stu_webhowheard_j_mba, #custentity_stu_info_session, #custentity_stu_currentvisastatus,
+#custentity_stu_webhowheard_tesol, #onlineForm322c, #custentity227,
+#custentity_stu_nationality,
+#custentity_stu_mob_email,
+#custentity298,
+#custentity_stu_webhowheard_j_cep, #custentity_stu_webhowheard_cep,
+#onlineForm262a, #onlineForm262b, #onlineForm262c, #custentity_stu_webhowheard_j, #custentity_stu_webother {
+	width: 80%;
+}
+
+#custentity325, #custentity326, #custentity_un_is_eventdate, #custentity390 {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* with bottom margin */
+#address1, #address2, #custentity_school_name, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted, #custentity_stu_webhowheard_mba, #custentity_stu_webhowheard_j_mba, #custentity_stu_occupation, #custentity_stu_webhowheard, #custentity_stu_webhowheard_tesol, #custentity_stu_edubackgrd, #custentity_stu_currentvisastatus, #custentityemergancycontactmethod, #custentity_stu_ssn, #custentity_stu_webhowheard_j_cep, #custentity_stu_webhowheard_cep, #custentity373, #custentity_stu_toeflscore_fs, #custentity_stu_toeic_score_fs, #custentity_stu_ieltsscore_fs {
+	margin-bottom: 5px;
+}
+
+/* For Summer College Form only */
+.summer-college,
+.summer-college #top { background: #fff; }
+
+/* For Summer College Form only */
+.one-day-class-observation-form-period2 { display: none; }
+
+/**************************************************************************
+ * Hiding Specific field
+**************************************************************************/
+.form65-dayinmba { display: none; }
+
+/**************************************************************************
+ * Media Queries
+**************************************************************************/
+@media only screen and (max-width: 700px) {
+#main .checkboximage { width: 1px; height: 1px; }
+}
+
+@media only screen and (max-width: 600px) {
+.form-content { padding: 8px; }
+
+#main dt { float: none !important; width: auto !important; text-align: left !important; margin: 0 0 4px 0 !important; }
+#main dd { margin: 0 0 14px 0 !important; }
+
+inpput, .form-90pc, .form-80px { width: 90% !important; }
+}
+@media only screen and (max-width: 480px) {
+button.css3button { width: 100%; }
+}

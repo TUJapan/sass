@@ -1,0 +1,352 @@
+/**
+ * Styles for only AEP section
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+/***
+ * Custom base styles
+ ***/
+
+/**************************************************************************
+ * Global Navigation
+ **************************************************************************/
+/* AEP */
+.sec-aep #globalnavi .sec-top a,
+.aep-home #globalnavi .mainlinks a,
+.sec-aep #globalnavi .mainlinks a { background: #256fdc; }
+.aep-home #globalnavi a:hover,
+.sec-aep #globalnavi a:hover {
+	background: #036;
+	color: #fff;
+}
+
+.aep-home #globalnavi .sec-top a {
+	background: #036;
+}
+
+/* on state for AEP */
+.sec-aep-about #globalnavi .aep-about a,
+.sec-aep-programs #globalnavi .aep-programs a,
+.sec-aep-admissions #globalnavi .aep-admissions a,
+.sec-aep-students #globalnavi .aep-students a {
+	background: #036;
+}
+
+
+/**************************************************************************
+ * Global Header - includes Toolbar, Section Head and Action Navigation
+ **************************************************************************/
+/***
+ * Section Head and Action Navigation
+ ***/
+#logo {
+	float: left;
+	margin: 8px 0 0;
+}
+
+#sechead .tuj-logo {
+	display: block;
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: 0 -65px;
+	width: 221px;
+	height: 40px;
+	margin: 0 0 12px 12px;
+	float: none;
+}
+
+#sechead .pn-aep {
+	display: block;
+  background: url(/aep/img/sprite-aep.png) no-repeat;
+	padding: 0;
+	overflow: hidden;
+	text-indent: -999px;
+	width: 231px;
+	height: 16px;
+	margin: 0 0 13px 54px;
+}
+.ja #sechead .pn-aep {
+	background-position: 0 -32px;
+	height: 14px;
+	margin: 0 0 15px 54px;
+}
+
+#sechead .pn-aep:hover {
+	background-position: 0 -16px;
+}
+.ja #sechead .pn-aep:hover {
+	background-position: 0 -46px;
+}
+
+#actionnavi {
+	margin: 8px 10px 12px;
+}
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+/***
+ * Header Styles
+ ***/
+.sec-aep #main .h-sm-dark,
+.aep-home #main .h-sm-dark { background: #0c4884; }
+
+.sec-aep #main .h-sm-sub { background: #f27e02; }
+
+/* Emphasized Ordered List */
+#main .ol-emphasize li:before {
+	color: #0047af;
+}
+
+#main .ol-emp-large-text li:before {
+	top: 2px;
+}
+
+/**************************************************************************
+ * Page Specific Styles
+ **************************************************************************/
+/* AEP Top */
+.top-intro { margin-top: 30px; }
+
+#main .link-action {
+	margin: 4px 0 0 0;
+	width: 100%;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	float: none;
+}
+#main .link-action li {
+	float: left;
+	width: 25%;
+	margin: 0;
+	paddig: 0;
+}
+.ie6 #main .link-action li { width: 24%; }
+.ie7 #main .link-action li { width: 24.8%; }
+#main .link-action li a {
+	display: block;
+	width: 97.173144877%;
+	border-left: 4px solid #236e82;
+	height: 40px;
+	background: #333;
+	padding: 16px 6px 0;
+	margin: 0;
+	font-size: 131%;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+#main .link-action li a:hover {
+	text-decoration: none;
+	background: #000;
+	border-left: 4px solid #9e1b34;
+}
+
+
+/**************************************************************************
+ * Button
+ **************************************************************************/
+/* button style */
+#main a.btn-green {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	padding: 8px 4% 10px;
+	background: #449429;
+	background: -moz-linear-gradient(top, #19a82e 0%, #449429 50%, #10520a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#19a82e), color-stop(0.50, #449429), to(#10520a));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #104f10;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.7), 0px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-green:hover {
+	text-decoration: none;
+	background: #25731e;
+	background: -moz-linear-gradient(top, #46cc58 0%, #5fb041 50%, #25731e);
+	background: -webkit-gradient(linear, left top, left bottom, from(#46cc58), color-stop(0.50, #5fb041), to(#25731e));
+}
+.ie6 #main a.btn-green:visited {
+  color: #fff;
+}
+#main a.btn-red {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	padding: 8px 4% 10px;
+	background: #9e1b34;
+	background: -moz-linear-gradient(top, #d54661 0%, #67091b);
+	background: -webkit-gradient(linear, left top, left bottom, from(#d54661), to(#67091b));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #67091b;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.7), 0px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-red:hover {
+	background: #c25665;
+	text-decoration: none;
+	background: -moz-linear-gradient(top, #faafaf 0%, #9e1b34);
+	background: -webkit-gradient(linear, left top, left bottom, from(#faafaf), to(#9e1b34));
+}
+#main a.btn-su { width: 45%; }
+
+
+/**************************************************************************
+ * Media queries for responsive design.
+ * These follow after primary styles so they will successfully override.
+ **************************************************************************/
+/**************************************************************************
+ * For High Res Display
+**************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-device-pixel-ratio: 2) {
+#sechead .pn-aep {
+	background-image: url(/aep/img/sprite-aep2x.png);
+	background-size: 231px 300px;
+}
+}
+
+/**************************************************************************
+ * For smaller displays
+**************************************************************************/
+@media screen and (max-width: 800px) {
+#main .link-action .quick-tour { display: none; }
+#main .link-action li { width: 33.3333%; }
+#main .link-action li a { font-size: 116%; }
+
+#main .link-onecol-800 .link-twocol li {
+	width: 88%;
+	float: none;
+}
+#main a.btn-su { width: 66%; }
+
+/* for maps page */
+#main .box-twocol-800 {
+	overflow: hidden;
+}
+#main .box-twocol-800 div {
+	width: 49%;
+	float: left;
+	margin-left: 2%;
+}
+#main .box-twocol-800 figure {
+	margin-bottom: 0;
+}
+#main div.box-twocol-first {
+	margin-left: 0;
+}
+}
+@media screen and (max-width: 700px) {
+#main .link-action li a { font-size: 108%; }
+}
+@media screen and (max-width: 600px) {
+/* global navi */
+.aep-home #globalnavi .mainlinks,
+.sec-aep #globalnavi .mainlinks { width: 100%; }
+.aep-home #globalnavi .mainlinks li,
+.sec-aep #globalnavi .mainlinks li { width: auto; }
+.aep-home #globalnavi .mainlinks .last,
+.sec-aep #globalnavi .mainlinks .last {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+.aep-home #globalnavi .mainlinks .aep-about a,
+.sec-aep #globalnavi .mainlinks .aep-about a {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+#globalnavi .mainlinks li { border-right: none; }
+#main .no-collapse .grid-4 {
+	float: left;
+	margin: 0 0 0 3.2%;
+	width: 31.2%;
+}
+#main .no-collapse .first { margin: 0; }
+}
+@media only screen and (max-width: 593px) {
+#logo { margin: 8px 0 0; width: 100%; float: none; }
+.aep-home #actionnavi { width: auto; display: block; float: none; }
+.aep-home #searchbox { width: 93.3%; margin: 0 0 12px 8px; }
+.aep-home #actionnavi .brochure a { width: auto; }
+.aep-home #actionnavi .session a { width: auto; }
+.aep-home #actionnavi li { width: 47.3%; margin: 0 0 10px 8px; }
+#actionnavi { display: none; }
+}
+@media only screen and (max-width: 540px) {
+.top-intro { margin-top: 0; }
+#main a.btn-su { width: 88%; }
+}
+@media only screen and (max-width: 520px) {
+.aep-home #actionnavi li { margin: 0 0 6px 8px; }
+/***
+ * Global Navigation
+ ***/
+.aep-home #globalnavi .sec-top { display: none; }
+.aep-home #globalnavi .mainlinks { display: block; float: none; margin: 8px 0 0; }
+.aep-home #globalnavi .mainlinks li { width: 49.7%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
+.aep-home #globalnavi .mainlinks .last {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.aep-home #globalnavi a { text-align: center; }
+.aep-home #globalnavi .mainlinks .aep-programs a {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+}
+@media screen and (max-width: 480px) {
+#sechead .tuj-logo { margin: 0 0 16px 14px; }
+
+/***
+ * Global Navigation
+ ***/
+.aep-home #globalnavi .mainlinks { margin: 8px 2% 0; width: 96%; }
+.aep-home #globalnavi { display: block; }
+#actionnavi { margin: 0 0 12px; }
+
+#main .box-twocol-800 div {
+	float: none;
+	width: auto;
+	margin-left: 0;
+}
+#main .box-twocol-800 figure {
+	margin-bottom: 30px;
+}
+
+#main .link-action li {
+	float: none;
+	width: auto;
+	margin-bottom: 1px;
+}
+#main .no-collapse .grid-4 {
+	float: none;
+	margin: 0;
+	width: auto;
+}
+}
+@media only screen and (max-width: 412px) {
+/* logo */
+#sechead .tuj-logo { margin: 0 0 14px 14px; float: none; }
+#sechead .pn-aep { margin: 5px 0 10px 56px; float: none; }
+}
+@media only screen and (max-width: 412px) {
+.aep-home #globalnavi .mainlinks li { width: 49.5%; }
+}
+@media only screen and (max-width: 360px) {
+.aep-home #searchbox { width: 91%; }
+.aep-home #actionnavi li { width: 46.4%; }
+}

@@ -1,0 +1,337 @@
+/**
+ * IE6, 7, 8 styles for www.tuj.ac.jp / Temple University, Japan Campus / ver. 4.0.
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+/**************************************************************************
+ * Toolbar
+ **************************************************************************/
+.ie6 #tbar, .ie7 #tbar { margin-bottom: 12px; }
+.ie6 .tbar-right li, .ie7 .tbar-right li { float: left; display: block; text-align: center; }
+.ie6 .tbar-right li.tb-maps, .ie7 .tbar-right li.tb-maps { width: 120px; }
+.ie6 .tbar-right li.tb-contact, .ie7 .tbar-right li.tb-contact { width: 70px; }
+.ie6 .tbar-right li.tb-lang, .ie7 .tbar-right li.tb-lang { width: 60px; }
+.ie6 .tbar-right li li, .ie7 .tbar-right li li { float: none; text-align: left; }
+.ie8 #tbar a { padding-bottom: 5px; }
+
+.ie6 .ja .tbar-right li.tb-maps, .ie7 .ja .tbar-right li.tb-maps { width: 95px; }
+.ie6 .ja .tbar-right li.tb-contact, .ie7 .ja .tbar-right li.tb-contact { width: 100px; }
+
+
+/**************************************************************************
+ * Section Head and Action Navigation
+ **************************************************************************/
+.ie6 #actionnavi { width: 282px; margin: 4px 5px 12px 10px; }
+.ie7 #actionnavi { margin-top: 4px; } 
+.ie6 #actionnavi .arr-action { margin: 3px 4px -6px 0; }
+.ie6 #searchbox { margin-left: 16px; }
+.ie6 #searchbutton, .ie7 #searchbutton { display: none; }
+.ie7 #actionnavi .arr-action { margin: 0 4px 3px 0; }
+ 
+
+/**************************************************************************
+ * Main Block;
+ **************************************************************************/
+/* for IE7 (prevent boxes from dropping when the window is resized */
+.ie7 .grid-3 { width: 22.5%; }
+.ie7 .grid-4 { width: 31%; }
+.ie7 .grid-6 { width: 48.3%; }
+.ie7 .grid-12 .grid-5 { width: 39%; }
+.ie7 .grid-12 .grid-10 { width: 82%; }
+.ie7 .grid-12 .grid-11 { width: 91%; }
+
+/* for IE6 (prevent boxes from dropping when the window is resized */
+.ie6 .grid-3 { width: 22.4%; }
+.ie6 .grid-4 { width: 31%; }
+.ie6 .grid-4 .grid-6 { width: 44.8%; }
+.ie6 .grid-6 { width: 48.2%; }
+.ie6 .grid-6 .grid-6 { width: 46.6%; }
+.ie6 .grid-6 .grid-8 { width: 62.3%; }
+.ie6 .grid-8 .grid-3 { width: 21.2%; }
+.ie6 .grid-8 .grid-4 { width: 30%; }
+.ie6 .grid-8 .grid-6 { width: 47.5%; }
+.ie6 .grid-8 .grid-8 { width: 64%; }
+.ie6 .grid-9 .grid-3 { width: 21.6%; }
+.ie6 .grid-9 .grid-4 { width: 30.3%; }
+.ie6 .grid-9 .grid-6 { width: 47.8%; }
+.ie6 .grid-9 .grid-8 { width: 64.8%; }
+.ie6 .grid-12 .grid-5 { width: 39%; }
+.ie6 .grid-12 .grid-10 { width: 82%; }
+.ie6 .grid-12 .grid-11 { width: 91%; }
+
+
+/**************************************************************************
+ * Standard HTML Elements in the Main Block;
+ **************************************************************************/
+.ie6 #main td { background: #fffefb; }
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+/* section navigation (horizontal) */
+.ie6 #main .secnavi-hr, .ie7 #main .secnavi-hr { padding-bottom: 10px; }
+
+/* section navigation (vertical) */
+.ie6 #main .secnavi-vert div, .ie7 #main .secnavi-vert div { background: #fff; border: 1px solid #bcb59f; }
+.ie6 #main .secnavi-vert h1 { background: #e5dcbf; }
+.ie6 #main .secnavi-vert h2 { background: #f3eedd; }
+
+/* links */
+.ie6 #main .link-large, .ie6 #main .link-large-red, .ie6 #main .link-medium, .ie6 #main .link-small { width: auto; }
+.ie6 #main .link-large li, .ie6 #main .link-large-red li, .ie6 #main .link-medium li, .ie6 #main .link-small li { margin-bottom: 6px; }
+.ie6 #main .link-large .li-spr,
+.ie6 #main .link-large-red .li-spr { margin: 0 4px 0 -15px; }
+.ie6 #main .link-medium .li-spr { margin: 5px 2px 0 -8px; }
+.ie6 #main .link-small .li-spr { margin: 7px 4px 0 -5px; }
+.ie6 #main .link-rel .li-spr { margin: 7px 4px 0 -8px; }
+.ie6 #main .link-prev-next { padding-bottom: 30px; }
+.ie6 #main .prev .li-spr { margin: 0 8px 0 -12px; }
+.ie6 #main .next .li-spr, .ie7 #main .next .li-spr { margin: 0 -12px 0 8px; }
+.ie6 .link-social .li-spr { width: 21px; height: 21px; margin: -2px 4px 0 -14px; }
+.ie6 .link-voice .li-spr { margin: -4px 4px 0 -18.5px; }
+
+/* two column links */
+.ie6 #main .link-twocol { padding-bottom: 30px; }
+.ie6 #main .link-twocol li { width: 40%; }
+
+/* decorated header elements */
+.ie6 #main .h-border { background: #f6f2e4; }
+
+
+/**************************************************************************
+ * Custom Elements used only on a particular page;
+ **************************************************************************/
+/* Univ Top */
+.ie6 .home #slideshow, .ie7 .home #slideshow { width: 69%; float: left; padding-right: 31%; padding-bottom: 90%; margin-bottom: -100%; }
+.ie6 #main .link-audience, .ie7 #main .link-audience { float: right; margin-left: -31%; }
+.ie6 #main .link-audience a:hover, .ie7 #main .link-audience a:hover, .ie8 #main .link-audience a:hover { background: #9e1b34; color: #fff; }
+.ie6 #main .arr-audience, .ie7 #main .arr-audience { position: absolute; right: 10px; }
+
+.ie6 #main .action-buttons li.btn-request-info a { background: #ef9413; }
+.ie6 #main .action-buttons li.btn-request-info a:hover { background: #ffb821; }
+.ie6 #main .action-buttons li.btn-info-sessions a { background: #a6b01e; }
+.ie6 #main .action-buttons li.btn-info-sessions a:hover { background: #c2ce20; }
+.ie6 #main .action-buttons li.btn-admissions a { background: #a03047; }
+.ie6 #main .action-buttons li.btn-admissions a:hover { background: #c92f4f; }
+.ie6 #main .action-buttons li.btn-contact a { background: #4b79be; }
+.ie6 #main .action-buttons li.btn-contact a:hover { background: #5f97ea; }
+
+.ie7 #main .announcements { float: none; }
+.ie6 #main .announcements ul { padding-left: 20px; width: 74%; }
+.ie6 #main .announcements h1 { background: #908a78; }
+
+/* admissions page */
+.ie6 #main .box-program h1.h-ug { background: #ffa800; }
+.ie6 #main .box-program h1.h-tesol { background: #62a72f; }
+.ie6 #main .box-program h1.h-mba { background: #236e82; }
+.ie6 #main .box-program h1.h-law { background: #490700; }
+.ie6 #main .box-program h1.h-aep { background: #256fdc; }
+.ie6 #main .box-program h1.h-conted { background: #f3d219; }
+
+
+/**************************************************************************
+ * Share Buttons
+ **************************************************************************/
+.ie6 .share-content { background: #e9e6d4; }
+.ie6 .share-content, .ie7 .share-content { overflow: visible; height: 30px; }
+
+
+/**************************************************************************
+ * Breadcrumb navigation
+ **************************************************************************/
+.ie6 #bcnavi li, .ie7 #bcnavi li { display: block; float: left; margin-right: 4px; overflow: hidden; }
+.ie6 #bcnavi .bc-arrow { margin: 5px 6px -5px -6px; }
+
+
+/**************************************************************************
+ * Footer
+ **************************************************************************/
+.ie6 #globalfooter { background: #423e32; }
+.ie6 #globalfooter .link-medium li { margin: 0 0 6px 2px; }
+.ie6 #globalfooter .link-medium .li-spr { margin: 4px 2px 0 -5px; }
+
+
+/**************************************************************************
+ * Icons and Arrows;
+ **************************************************************************/
+.ie6 .ico-icas,
+.ie6 #main .links .ico-icas,
+.ie6 .ico-stud,
+.ie6 #main .links .ico-stud,
+.ie6 .ico-alum,
+.ie6 #main .links .ico-alum,
+.ie6 .ico-facu,
+.ie6 #main .links .ico-facu,
+.ie6 .ico-staf,
+.ie6 #main .links .ico-staf,
+.ie6 .ico-en,
+.ie6 #main .links .ico-en,
+.ie6 .ico-ja,
+.ie6 #main .links .ico-ja { font-size: 1%; }
+
+
+/**************************************************************************
+ * Minimum CSS3 fix
+**************************************************************************/
+.ie6 #tbar .content, .ie7 #tbar .content, .ie8 #tbar .content,
+.ie7 #globalnavi .sec-top a, .ie8 #globalnavi .sec-top a,
+.ie7 #globalnavi .mainlinks .last, .ie8 #globalnavi .mainlinks .last,
+.ie6 #main .secnavi-vert div, .ie7 #main .secnavi-vert div, .ie8 #main .secnavi-vert div,
+.ie6 #main .secnavi-vert h1, .ie7 #main .secnavi-vert h1, .ie8 #main .secnavi-vert h1,
+.ie6 .box-round, .ie7 .box-round, .ie8 .box-round,
+.ie6 #main .box-program, .ie7 #main .box-program, .ie8 #main .box-program,
+.ie8 #actionnavi a, .ie8 #actionnavi a:hover { behavior: url(/js/libs/PIE.htc); position: relative; }
+
+.ie8 #actionnavi a { -pie-background: linear-gradient(#fff, #efefef); }
+.ie8 #actionnavi a:hover,
+.ie8 .p-request-info #actionnavi .brochure a,
+.ie8 .p-info-sessions #actionnavi .session a { -pie-background: linear-gradient(#67091b, #400510); }
+
+
+/**************************************************************************
+ * Respond.js fix for high res display styles
+**************************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+.ie6 #tbar .tbar-left a.utop,
+.ie6 #ibutton,
+.ie6 #ibutton a:hover,
+.ie6 #searchbutton,
+.ie6 .link-large .li-spr,
+.ie6 .link-large-red .li-spr,
+.ie6 .link-medium .li-spr,
+.ie6 .link-small .li-spr,
+.ie6 .link-rel .li-spr,
+.ie6 .prev .li-spr,
+.ie6 .next .li-spr,
+.ie6 .link-social .li-spr,
+.ie6 .link-voice .li-spr,
+.ie6 .spr,
+.ie7 #tbar .tbar-left a.utop,
+.ie7 #ibutton,
+.ie7 #ibutton a:hover,
+.ie7 #searchbutton,
+.ie7 .link-large .li-spr,
+.ie7 .link-large-red .li-spr,
+.ie7 .link-medium .li-spr,
+.ie7 .link-small .li-spr,
+.ie7 .link-rel .li-spr,
+.ie7 .prev .li-spr,
+.ie7 .next .li-spr,
+.ie7 .link-social .li-spr,
+.ie7 .link-voice .li-spr,
+.ie7 .spr,
+.ie8 #tbar .tbar-left a.utop,
+.ie8 #ibutton,
+.ie8 #ibutton a:hover,
+.ie8 #searchbutton,
+.ie8 .link-large .li-spr,
+.ie8 .link-large-red .li-spr,
+.ie8 .link-medium .li-spr,
+.ie8 .link-small .li-spr,
+.ie8 .link-rel .li-spr,
+.ie8 .prev .li-spr,
+.ie8 .next .li-spr,
+.ie8 .link-social .li-spr,
+.ie8 .link-voice .li-spr,
+.ie8 .spr {
+	background-image: url(/img/sprite.png);
+}
+
+.ie6 #bcnavi h1,
+.ie7 #bcnavi h1,
+.ie8 #bcnavi h1 {
+	background: url(/img/sprite.png) no-repeat right -216px;
+}
+
+.ie6 #sechead .pn-ug,
+.ie7 #sechead .pn-ug,
+.ie8 #sechead .pn-ug {
+	background-image: url(/ug/img/sprite-ug.png);
+}
+
+.ie6 #sechead .pn-aep,
+.ie7 #sechead .pn-aep,
+.ie8 #sechead .pn-aep {
+  background-image: url(/aep/img/sprite-aep.png);
+}
+
+.ie6 #sechead .pn-cep,
+.ie7 #sechead .pn-cep,
+.ie8 #sechead .pn-cep {
+	background-image: url(/cep/img/sprite-cep.png);
+}
+
+.ie6 #sechead .pn-law,
+.ie7 #sechead .pn-law,
+.ie8 #sechead .pn-law {
+	background-image: url(/law/img/sprite-law.png);
+}
+
+.ie6 #sechead .pn-mba,
+.ie7 #sechead .pn-mba,
+.ie8 #sechead .pn-mba {
+	background-image: url(/mba/img/sprite-mba.png);
+}
+
+.ie6 #sechead .pn-tesol,
+.ie7 #sechead .pn-tesol,
+.ie8 #sechead .pn-tesol {
+	background-image: url(/tesol/img/sprite-tesol.png);
+}
+
+.ie6 #sechead .pn-cont-ed,
+.ie7 #sechead .pn-cont-ed,
+.ie8 #sechead .pn-cont-ed {
+	background-image: url(/cont-ed/img/sprite-cont-ed.png);
+}
+
+/* For MBA Section */
+.ie6 #sechead .pn-mba,
+.ie6 #main .link-action li a,
+.ie7 #sechead .pn-mba,
+.ie7 #main .link-action li a,
+.ie8 #sechead .pn-mba,
+.ie8 #main .link-action li a {
+	background-image: url(/mba/img/sprite-mba.png);
+}
+}
+
+@media only screen and (max-width: 800px) {
+.ie6 #bcnavi h1,
+.ie7 #bcnavi h1,
+.ie8 #bcnavi h1 {
+	background: #67091b;
+}
+}
+
+/***
+ * For High Res Display
+ ***/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), 
+only screen and (min-device-pixel-ratio: 2) and (max-width: 480px) {
+.ie6 #tbar .tbar-left a.utop,
+.ie6 .ja #tbar .tbar-left a.utop,
+.ie6 #tbar .tbar-left a.utop:hover,
+.ie6 .ja #tbar .tbar-left a.utop:hover,
+.ie6 #ibutton,
+.ie6 .ja #ibutton,
+.ie6 #ibutton a:hover,
+.ie7 #tbar .tbar-left a.utop,
+.ie7 .ja #tbar .tbar-left a.utop,
+.ie7 #tbar .tbar-left a.utop:hover,
+.ie7 .ja #tbar .tbar-left a.utop:hover,
+.ie7 #ibutton,
+.ie7 .ja #ibutton,
+.ie7 #ibutton a:hover,
+.ie8 #tbar .tbar-left a.utop,
+.ie8 .ja #tbar .tbar-left a.utop,
+.ie8 #tbar .tbar-left a.utop:hover,
+.ie8 .ja #tbar .tbar-left a.utop:hover,
+.ie8 #ibutton,
+.ie8 .ja #ibutton,
+.ie8 #ibutton a:hover {
+	background-image: url(/img/sprite.png);
+}
+}

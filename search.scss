@@ -1,0 +1,63 @@
+/**
+ * Styles for search pages / Temple University, Japan Campus / ver. 4.0.
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+#main .gsc-resultsHeader,
+#main .gs-visibleUrl,
+#main .gcsc-branding { display: none; }
+.sec-search #main table,
+.sec-search #main th,
+.sec-search #main td {
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+#main table.gsc-search-box { margin-bottom: 30px; }
+#main input.gsc-input {
+	height: 22px;
+	padding: 4px 6px;
+	font-size: 123.1%;
+	border: 1px solid #999;
+	width: 96%;
+}
+#main .gs-snippet { margin-bottom: 30px; }
+#main .gsc-above-wrapper-area { margin-bottom: 30px; }
+#main .gsc-result {
+	padding: 0;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #bcb59f;
+}
+#main .gsc-result-info { margin-bottom: 20px; }
+#main .gs-title { color: #9e1b34; }
+#main .gs-title b { color: #67091b; }
+#main .gs-snippet b { color: #000; }
+#main td.gsc-search-button {
+	padding: 0;
+	margin: 0;
+}
+#main input.gsc-search-button {
+	background: #67091b;
+	border: 1px solid #000;
+	margin: 0;
+	height: 32px;
+	padding: 8px 20px;
+	color: #fff;
+	font-weight: 600;
+}
+#main .gsc-cursor-page {
+	padding: 4px 6px;
+	border: 1px solid #bcb59f;
+	background: #fff;
+	text-decoration: none;
+	color: #9e1b34;
+}
+#main .gsc-cursor-page:hover {
+	background: #9e1b34;
+	color: #fff;
+}
+#main .gsc-cursor-current-page {
+	background: #67091b;
+	color: #fff;
+}

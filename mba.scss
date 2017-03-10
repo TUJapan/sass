@@ -1,0 +1,404 @@
+/**
+ * Styles for only MBA section
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+.sec-mba h1, .sec-mba h2, .sec-mba h3, .sec-mba h4, .sec-mba h5, .sec-mba h6 {
+    color: #000;
+}
+
+
+/**************************************************************************
+ * Global Navigation
+ **************************************************************************/
+.sec-mba #globalnavi .sec-top a, .mba-home #globalnavi .mainlinks a, .sec-mba #globalnavi .mainlinks a {
+    background: #236e82;
+}
+.mba-home #globalnavi a:hover, .sec-mba #globalnavi a:hover {
+    background: #000;
+    color: #fff;
+}
+.mba-home #globalnavi .sec-top a {
+    background: #333;
+}
+.sec-mba-about #globalnavi .about a, .sec-mba-admissions #globalnavi .admissions a, .sec-mba-academics #globalnavi .academics a, .sec-mba-testimonials #globalnavi .testimonials a {
+    background: #333;
+}
+
+
+/**************************************************************************
+ * Global Header - includes Toolbar, Section Head and Action Navigation
+ **************************************************************************/
+/***
+ * Section Head and Action Navigation
+ ***/
+#logo {
+	float: left;
+	overflow: hidden;
+	width: auto;
+}
+#sechead .tuj-logo {
+	display: block;
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: 0 -65px;
+	width: 221px;
+	height: 40px;
+	margin: 8px 0 12px 12px;
+	float: none;
+}
+#sechead .pn-mba {
+	display: block;
+	background: url(/mba/img/sprite-mba.png) no-repeat;
+	padding: 0;
+	overflow: hidden;
+	text-indent: -999px;
+	width: 168px;
+	height: 16px;
+	margin: 0 0 13px 54px;
+}
+#sechead .pn-mba:hover {
+    background-position: 0 -16px;
+}
+
+#actionnavi {
+    margin: 8px 10px 12px;
+}
+
+/* Action Buttons */
+.p-open-class #actionnavi .open-class .arr-action { background-position: -164px -107px; }
+.p-open-class #actionnavi .open-class  a {
+	color: #fff;
+	background: #67091b;
+	-moz-box-shadow: inset 0 0 8px #000;
+	-webkit-box-shadow: inset 0 0 8px #000;
+	box-shadow: inset 0 0 8px #000;
+	border: 1px solid #000;
+}
+
+.ja #actionnavi .open-class a { width: 140px; }
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+/***
+ * Header Styles
+ ***/
+.sec-mba #main .h-border {
+    color: #000;
+}
+.sec-mba #main .h-sm-dark, .mba-home #main .h-sm-dark {
+    background: #000;
+}
+
+
+/**************************************************************************
+ * Page Specific Styles
+ **************************************************************************/
+#slideshow {
+    background: #000 url(/mba/img/top01.jpg) no-repeat top center;
+    z-index: 10;
+    height: 280px;
+}
+#main .link-action {
+    margin: 4px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    float: none;
+}
+#main .link-action li {
+    float: left;
+    width: 25%;
+    margin: 0;
+    paddig: 0;
+}
+.ie6 #main .link-action li {
+    width: 24%}
+.ie7 #main .link-action li {
+    width: 24.8%}
+#main .link-action li a {
+    display: block;
+    width: 97.173144877%;
+    border-left: 4px solid #000;
+    height: 40px;
+    background: #236d82 url(/mba/img/sprite-mba.png) no-repeat -167px -32px;
+    padding: 18px 6px 0 40px;
+    margin: 0;
+    font-size: 131%;
+    font-weight: 700;
+    color: #fff;
+}
+#main .link-action li a:hover {
+    text-decoration: none;
+    background-color: #000;
+    border-left: 4px solid #57a9c1;
+}
+
+
+/**************************************************************************
+ * Button
+ **************************************************************************/
+/* button style */
+#main a.btn-green {
+    display: block;
+    text-align: center;
+    font-size: 116%;
+    color: #fff;
+    padding: 8px 4% 10px;
+    background: #449429;
+    background: -moz-linear-gradient(top, #19a82e 0, #449429 50%, #10520a);
+    background: -webkit-gradient(linear, left top, left bottom, from(#19a82e), color-stop(0.50, #449429), to(#10520a));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #104f10;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.7), 0px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#main a.btn-green:hover {
+    text-decoration: none;
+    background: #25731e;
+    background: -moz-linear-gradient(top, #46cc58 0, #5fb041 50%, #25731e);
+    background: -webkit-gradient(linear, left top, left bottom, from(#46cc58), color-stop(0.50, #5fb041), to(#25731e));
+}
+.ie6 #main a.btn-green:visited {
+    color: #fff;
+}
+#main a.btn-red {
+    display: block;
+    text-align: center;
+    font-size: 116%;
+    color: #fff;
+    padding: 8px 4% 10px;
+    background: #9e1b34;
+    background: -moz-linear-gradient(top, #d54661 0, #67091b);
+    background: -webkit-gradient(linear, left top, left bottom, from(#d54661), to(#67091b));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #67091b;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.7), 0px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#main a.btn-red:hover {
+    background: #c25665;
+    text-decoration: none;
+    background: -moz-linear-gradient(top, #faafaf 0, #9e1b34);
+    background: -webkit-gradient(linear, left top, left bottom, from(#faafaf), to(#9e1b34));
+}
+#main a.btn-su {
+    width: 45%}
+
+
+/**************************************************************************
+ * Media queries for responsive design.
+ * These follow after primary styles so they will successfully override.
+ **************************************************************************/
+
+/**************************************************************************
+ * For High Res Display
+**************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-device-pixel-ratio: 2) {
+#sechead .pn-mba,
+#main .link-action li a {
+	background-image: url(/mba/img/sprite-mba2x.png);
+	background-size: 200px 300px;
+}
+}
+
+/**************************************************************************
+ * For smaller displays
+**************************************************************************/
+@media screen and (max-width:920px) {
+#slideshow {
+    background: #000 url(/mba/img/top01-900.jpg) no-repeat top center;
+}
+}
+@media screen and (max-width:870px) {
+#main .link-action li a {
+	background-position: -177px -32px;
+  padding: 18px 6px 0 30px;
+}
+}
+@media screen and (max-width:800px) {
+#main .link-action li {
+  width: 50%;
+	margin-bottom: 2px;
+}
+#main .link-action li a {
+	background-position: -167px -37px;
+  padding: 12px 6px 0 40px;
+	height: 34px;
+}
+#main .img-g4-to-2 .grid-3 {
+    float: left;
+    margin: 0 0 0 28%;
+    width: 36%}
+#main .txt-g4-to-2 .grid-3 {
+    float: left;
+    margin: 0 0 0 3.2%;
+    width: 48.4%}
+#main .img-g4-to-2 .first, #main .img-g4-to-2 .second-row, #main .txt-g4-to-2 .first, #main .txt-g4-to-2 .second-row {
+    margin: 0;
+}
+#main .img-g4-to-2 img {
+    width: 100%}
+#main .img-g2-to-1 .grid-6 {
+    float: none;
+    margin: 0;
+    width: 60%}
+#main .link-onecol-800 .link-twocol li {
+    width: 88%;
+    float: none;
+}
+#main a.btn-su {
+    width: 66%}
+#main .tpr {
+    display: none;
+}
+#main .box-twocol-800 {
+    overflow: hidden;
+}
+#main .box-twocol-800 div {
+    width: 49%;
+    float: left;
+    margin-left: 2%}
+#main .box-twocol-800 figure {
+    margin-bottom: 0;
+}
+#main div.box-twocol-first {
+    margin-left: 0;
+}
+}
+
+@media screen and (max-width:660px) {
+#main .link-action li a {
+	background-position: -177px -32px;
+  padding: 18px 6px 0 30px;
+}
+}
+
+@media screen and (max-width:620px) {
+#main .link-action li a {
+	background-position: -167px -32px;
+  padding: 18px 6px 0 40px;
+}
+}
+
+@media screen and (max-width:640px) {
+#slideshow {
+    background: #000 url(/mba/img/top01-600.jpg) no-repeat top center;
+}
+.mba-home #globalnavi .mainlinks, .sec-mba #globalnavi .mainlinks {
+    width: 100%}
+.mba-home #globalnavi .mainlinks li, .sec-mba #globalnavi .mainlinks li {
+    width: 23%}
+.mba-home #globalnavi .mainlinks .last, .sec-mba #globalnavi .mainlinks .last {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+#main .tcn {
+    display: none;
+}
+}
+
+@media only screen and (max-width:540px) {
+.mba-home #actionnavi {
+    display: block;
+}
+#main a.btn-su {
+    width: 88%}
+}
+
+@media only screen and (max-width:520px) {
+.mba-home #globalnavi .sec-top {
+    display: none;
+}
+.mba-home #globalnavi .mainlinks {
+    display: block;
+    float: none;
+    margin: 8px 0 0;
+}
+.mba-home #globalnavi .mainlinks li {
+    width: 49.7%;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.mba-home #globalnavi .mainlinks .last, #globalnavi .mainlinks .programs a {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.mba-home #globalnavi a {
+    text-align: center;
+}
+.mba-home #globalnavi .mainlinks .academics a {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+.mba-home #actionnavi {
+    display: block;
+}
+#actionnavi {
+    display: none;
+}
+}
+
+@media screen and (max-width:480px) {
+#slideshow {
+    background: #000 url(/mba/img/top01-480.jpg) no-repeat top center;
+}
+.mba-home #globalnavi .mainlinks {
+    margin: 8px 2% 0;
+    width: 96%}
+.mba-home #globalnavi {
+    display: block;
+}
+#actionnavi {
+    margin: 0 0 12px;
+}
+#slideshow {
+	height: 200px;
+}
+#main .link-action li a {
+	font-size: 85%;
+	background-position: -180px -78px;
+  padding: 12px 6px 0 24px;
+	height: 34px;
+}
+#main .txt-g4-to-2 .grid-3 {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+#main .box-twocol-800 div {
+    float: none;
+    width: auto;
+    margin-left: 0;
+}
+#main .box-twocol-800 figure {
+    margin-bottom: 30px;
+}
+}
+@media only screen and (max-width:360px) {
+.mba-home #globalnavi .mainlinks li {
+    width: 49.5%}
+#main .img-g4-to-2 .grid-3 {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+#main .link-action li a {
+	font-size: 85%;
+	background-position: -184px -78px;
+  padding: 12px 6px 0 20px;
+}
+}

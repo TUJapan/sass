@@ -1,0 +1,699 @@
+/**
+ * Styles for only TESOLsection
+ * Last updated by: Toru Miki (TM)
+ */
+
+
+/**************************************************************************
+ * Global Navigation
+ **************************************************************************/
+.sec-tesol #globalnavi .sec-top a, .tesol-home #globalnavi .mainlinks a, .sec-tesol #globalnavi .mainlinks a {
+    background: #62a72f;
+    color: #fff;
+}
+.tesol-home #globalnavi a:hover, .sec-tesol #globalnavi a:hover {
+    background: #3c6d17;
+    color: #fff;
+}
+.tesol-home #globalnavi .sec-top a {
+    background: #3c6d17;
+    color: #fff;
+}
+.sec-tesol-about #globalnavi .about a, .sec-tesol-tokyo #globalnavi .tokyo a, .sec-tesol-osaka #globalnavi .osaka a, .sec-tesol-faculty #globalnavi .faculty a, .sec-tesol-seminars #globalnavi .seminars a, .sec-tesol-publications #globalnavi .publications a {
+    background: #3c6d17;
+    color: #fff;
+}
+
+
+/**************************************************************************
+ * Global Header - includes Toolbar, Section Head and Action Navigation
+ **************************************************************************/
+/***
+ * Section Head and Action Navigation
+ ***/
+#logo {
+  float: left;
+	overflow: hidden;
+	width: auto;
+}
+#sechead .tuj-logo {
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
+    background-position: 0 -65px;
+    width: 221px;
+    height: 40px;
+    margin: 8px 0 12px 12px;
+    float: none;
+}
+#sechead .pn-tesol {
+    display: block;
+    background: url(/tesol/img/sprite-tesol.png) no-repeat;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 220px;
+    height: 16px;
+    margin: 0 0 13px 54px;
+}
+.ja #sechead .pn-tesol {
+    background-position: 0 -32px;
+    width: 117px;
+		height: 14px;
+    margin: 0 0 15px 54px;
+}
+#sechead .pn-tesol:hover {
+    background-position: 0 -16px;
+}
+.ja #sechead .pn-tesol:hover {
+    background-position: 0 -46px;
+}
+#actionnavi {
+    margin: 8px 10px 12px;
+}
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+/***
+ * Header Styles
+ ***/
+.sec-tesol #main .h-sm-dark, .tesol-home #main .h-sm-dark {
+    background: #073b00;
+}
+#tesol-top-fig-box {
+    position: relative;
+    z-index: 10;
+}
+#tesol-top-fig-box-text {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 43%;
+    padding: 1.5em 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 11;
+}
+.ie8 #tesol-top-fig-box-text, .ie7 #tesol-top-fig-box-text, .ie6 #tesol-top-fig-box-text {
+    background-color: #fff;
+}
+.tesol-top-fig-box-text-title {
+    color: #000;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.tesol-top-fig-box-text-title a:link, .tesol-top-fig-box-text-title a:visited {
+    color: #62a72f!important;
+}
+.tesol-top-pull-quote {
+    padding: 6px 10px 0 54px!important;
+}
+
+/***
+ * Section Navigation (Horizontal)
+ ***/
+ 
+ /* On state for each section */
+.sec-tokyo #main .secnavi-hr .tokyo a, .sec-osaka #main .secnavi-hr .osaka a, .sec-faq #main .secnavi-hr .faq-courses a, .sec-english-level #main .secnavi-hr .english-level a {
+    color: #67091b;
+}
+
+/***
+ * Open Box
+ ***/
+#main .box-open {
+    border-top: 1px dashed #bbb;
+    border-bottom: 1px dashed #bbb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+
+/**************************************************************************
+ * Page Specific Styles
+ **************************************************************************/
+/* Top */
+#slideshow {
+    background: #000 url(/tesol/img/top01.jpg) no-repeat top center;
+    z-index: 10;
+}
+#main .featured .link-large-red li {
+    border-bottom: 1px dashed #bcb59f;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+
+/* faq */
+.box-faq {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0;
+    margin: 0 0 30px 0;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#main .faq-q {
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 16px 10px;
+    min-height: 78px;
+}
+#main .faq-q dt {
+    float: none;
+    font-size: 153.9%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 600;
+    color: #9e1b34;
+    margin: 0 0 16px 0;
+}
+#main .faq-q dd {
+    margin: 0;
+    font-size: 108%}
+#main .faq-a {
+    padding: 10px;
+    margin: 0;
+    background: #9e1b34;
+    min-height: 120px;
+    display: none;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#main .faq-a * {
+    color: #fff;
+}
+#main .box-faq a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* courses */
+.p-courses .secnavi-hr {
+    display: none;
+}
+
+/* course schedules */
+.schedules th, .calendar th {
+    font-weight: normal;
+}
+.schedules td, .calendar td {
+    text-align: center;
+}
+.schedules th.tct, .schedules td.tct, .calendar td.cal-dates {
+    text-align: left;
+}
+.zebra tbody tr:nth-child(even) td {
+    background: #faf8ef url(/img/noise.png) repeat 0 0!important;
+}
+.tcr {
+    background: #fcf1c6 url(/img/noise.png) repeat 0 0!important;
+    color: #493e1d;
+}
+.ie6 .tcr {
+    background: #fcf1c6!important;
+}
+.zebra tbody tr:nth-child(even) td.tcr {
+    background: #f7ebbd url(/img/noise.png) repeat 0 0!important;
+}
+th.tcr {
+    background: #ddce9c url(/img/noise.png) repeat 0 0!important;
+    font-weight: 600;
+}
+.ie6 th.tcr {
+    background: #ddce9c!important;
+}
+#main .calendar th, #main .calendar td {
+    padding: 8px 5px;
+}
+#main .schedules th, #main .schedules td {
+    padding: 8px 5px;
+}
+
+/* academic calendar */
+.cal-milestone {
+    background: url("/img/noise.png") repeat scroll 0 0 #c5f4c1!important;
+}
+.zebra tbody tr:nth-child(2n) td.cal-milestone {
+    background: url("/img/noise.png") repeat scroll 0 0 #c5f4c1!important;
+}
+.big-academic-calendar, .course-schedule {
+    max-width: 718px;
+}
+.course-schedule td {
+    text-align: left;
+}
+
+/* course calendar */
+.calendar .hd {
+    text-align: left;
+}
+
+
+/**************************************************************************
+ * Icons
+ **************************************************************************/
+/* For link */
+.link-cats, .link-voice {
+    margin: 0;
+    list-style: none;
+    width: 95%}
+.link-cats .li-spr, .link-voice .li-spr {
+    display: block;
+    float: left;
+    background: url(/tesol/img/sprite-tesol.png) no-repeat;
+    padding: 0!important;
+}
+#main .link-cats {
+    margin-bottom: 20px;
+}
+.link-cats li {
+    padding: 10px 0 0 50px;
+}
+.link-cats a {
+    font-size: 116%;
+    font-weight: 600;
+}
+.link-cats .li-spr {
+    width: 42px;
+    height: 42px;
+    margin: -10px 0 0 -50px;
+}
+.ie6 .link-cats .li-spr {
+    margin: -10px 4px 0 -25px;
+}
+.link-cats .cat-language {
+    background-position: 0 -60px;
+}
+.link-cats .cat-academic-skills {
+    background-position: -42px -60px;
+}
+.link-cats .cat-culture-and-arts {
+    background-position: -84px -60px;
+}
+.link-cats .cat-professional {
+    background-position: 0 -102px;
+}
+.link-cats .cat-business {
+    background-position: -42px -102px;
+}
+.link-cats .cat-computer {
+    background-position: -84px -102px;
+}
+
+/* small icons */
+#main .link-cats-sm {
+    margin-bottom: 20px;
+}
+.link-cats-sm li {
+    padding: 4px 0 4px 42px;
+}
+.link-cats-sm a {
+    font-size: 100%;
+    font-weight: normal;
+}
+.link-cats-sm .li-spr {
+    width: 30px;
+    height: 30px;
+    margin: -4px 0 0 -38px;
+}
+.ie6 .link-cats-sm .li-spr {
+    margin: -4px 4px 0 -19px;
+}
+.link-cats-sm .cat-language {
+    background-position: 0 -186px;
+}
+.link-cats-sm .cat-academic-skills {
+    background-position: -30px -186px;
+}
+.link-cats-sm .cat-culture-and-arts {
+    background-position: -60px -186px;
+}
+.link-cats-sm .cat-professional {
+    background-position: -90px -186px;
+}
+.link-cats-sm .cat-business {
+    background-position: 0 -216px;
+}
+.link-cats-sm .cat-computer {
+    background-position: -30px -216px;
+}
+
+/* testimonial voice bubble */
+.link-voice li {
+    padding: 10px 0 0 40px;
+}
+.link-voice .li-spr {
+    width: 29px;
+    height: 28px;
+    margin: -4px 0 0 -37px;
+    background-position: -64px -247px;
+}
+.ie6 .link-voice .li-spr {
+    margin: -4px 4px 0 -18.5px;
+}
+.spr-tesol {
+    background: url(/tesol/img/sprite-tesol.png) no-repeat;
+    padding: 0!important;
+}
+.cl, #main .links .cl {
+    width: 63px;
+    height: 13px;
+    background-position: 0 -247px;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    float: none;
+}
+
+/* "?" icon */
+.qm {
+    display: block;
+    width: 12px;
+    height: 12px;
+    text-indent: -999px;
+    background-position: 0 -261px;
+    display: inline-block;
+    float: none;
+    overflow: hidden;
+}
+
+
+/**************************************************************************
+ * Button
+ **************************************************************************/
+/* button style */
+#main a.btn-green {
+    display: block;
+    text-align: center;
+    font-size: 116%;
+    color: #fff;
+    padding: 8px 4% 10px;
+    background: #449429;
+    background: -moz-linear-gradient(top, #19a82e 0, #449429 50%, #10520a);
+    background: -webkit-gradient(linear, left top, left bottom, from(#19a82e), color-stop(0.50, #449429), to(#10520a));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #104f10;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.7), 0px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#main a.btn-green:hover {
+    text-decoration: none;
+    background: #25731e;
+    background: -moz-linear-gradient(top, #46cc58 0, #5fb041 50%, #25731e);
+    background: -webkit-gradient(linear, left top, left bottom, from(#46cc58), color-stop(0.50, #5fb041), to(#25731e));
+}
+.ie6 #main a.btn-green:visited {
+    color: #fff;
+}
+.ie6 #main a.btn-green, .ie7 #main a.btn-green, .ie8 #main a.btn-green {
+    position: relative;
+    behavior: url(/js/libs/PIE.htc);
+}
+#main a.btn-red {
+    display: block;
+    text-align: center;
+    font-size: 116%;
+    color: #fff;
+    padding: 8px 4% 10px;
+    background: #9e1b34;
+    background: -moz-linear-gradient(top, #d54661 0, #67091b);
+    background: -webkit-gradient(linear, left top, left bottom, from(#d54661), to(#67091b));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #67091b;
+    -moz-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(000, 000, 000, 0.5), inset 0 0 1px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.7), 0px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#main a.btn-red:hover {
+    background: #c25665;
+    text-decoration: none;
+    background: -moz-linear-gradient(top, #faafaf 0, #9e1b34);
+    background: -webkit-gradient(linear, left top, left bottom, from(#faafaf), to(#9e1b34));
+}
+#main a.btn-orange {
+    display: block;
+    text-align: center;
+    font-size: 116%;
+    color: #fff;
+    padding: 8px 4% 10px;
+    background: #f2a100;
+    background: -moz-linear-gradient(top, #f7ac22 0, #f2a100 50%, #d28a00);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7ac22), color-stop(0.50, #f2a100), to(#d28a00));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #dd9300;
+    -moz-box-shadow: 0 1px 3px rgba(136, 136, 136, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(136, 136, 136, 0.5), inset 0 0 3px rgba(255, 255, 255, 1);
+    text-shadow: 0 -1px 0 rgba(000, 000, 000, 0.7), 0px 1px 0 rgba(255, 255, 255, 0.3);
+}
+#main a.btn-orange:hover {
+    background: #e59500;
+    text-decoration: none;
+    background: -moz-linear-gradient(top, #ffbc54 0, #ffae19);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffbc54), to(#ffae19));
+}
+.ie6 #main a.btn-orange:visited {
+    color: #fff;
+}
+.ie6 #main a.btn-orange, .ie7 #main a.btn-orange, .ie8 #main a.btn-orange {
+    position: relative;
+    behavior: url(/js/libs/PIE.htc);
+}
+#main a.btn-su {
+    width: 45%}
+
+
+/**************************************************************************
+ * Media queries for responsive design.
+ * These follow after primary styles so they will successfully override.
+ **************************************************************************/
+
+/**************************************************************************
+ * For High Res Display
+**************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-device-pixel-ratio: 2) {
+#sechead .pn-tesol {
+	background-image: url(/tesol/img/sprite-tesol2x.png);
+	background-size: 215px 300px;
+}
+}
+
+/**************************************************************************
+ * For smaller displays
+**************************************************************************/
+@media screen and (max-width:900px) {
+#main dl.cd-fees dt {
+    float: none;
+}
+#main dl.cd-fees dd {
+    margin: 0 0 14px 0;
+}
+#tesol-top-fig-box-text {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 1.5em 20px 2em;
+}
+}
+
+@media screen and (max-width:860px) {
+.tesol-home #main blockquote {
+    background: 0;
+}
+.tesol-top-pull-quote {
+    padding: 6px 15px!important;
+}
+.tesol-top-pull-quote p:first-child:before {
+    content: '\201C'}
+.tesol-top-pull-quote p:first-child:after {
+    content: '\201C'}
+}
+
+@media screen and (max-width:780px) {
+/* Top page slide show */
+#slideshow {
+    background: #000 url(/tesol/img/top01-800.jpg) no-repeat top center;
+}
+
+/* Hide schedule table columns */
+.tfe, .schedules .ebird, .schedules .ftuj, .thr {
+    display: none;
+}
+
+/* Top page big box */
+#tesol-top-fig-box-text {
+    width: 50%;
+    height: 85%;
+    padding: 1.2em 20px 1.8em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 90%}
+}
+
+@media only screen and (max-width:700px) {
+#main .featured .grid-6 {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+}
+
+#tesol-top-fig-box-text ul {
+    line-height: 1.2em;
+}
+#main #tesol-top-fig-box-text .btn-orange, #main #tesol-top-fig-box-text .btn-green {
+    padding: 5px 4% 7px;
+}
+
+@media screen and (max-width:600px) {
+/* global navi */
+.tesol-home #globalnavi .mainlinks, .sec-tesol #globalnavi .mainlinks {
+    width: 100%}
+.tesol-home #globalnavi .mainlinks li, .sec-tesol #globalnavi .mainlinks li {
+    width: 23%}
+.tesol-home #globalnavi .mainlinks li.seminars, .sec-tesol #globalnavi .mainlinks li.seminars {
+    width: 69.2%}
+#globalnavi .mainlinks .faculty a {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+/* Top page slide show */
+#slideshow {
+    background: #000 url(/tesol/img/top01-600.jpg) no-repeat top center;
+}
+
+/* Top page big box */
+#tesol-top-fig-box-text {
+    padding: 2em 20px 1em;
+}
+.tesol-top-fig-box-text-buttons {
+    display: none;
+}
+
+/* courses */
+.p-courses .secnavi-hr {
+    display: block;
+}
+
+/* Course detail page */
+#main dl.cd-fees dt, #main dl.cd-spec dt {
+    float: left;
+}
+#main dl.cd-fees dd {
+    margin: 0 0 12px 140px;
+}
+#main dl.cd-spec dd {
+    margin: 0 0 12px 120px;
+}
+
+/* faq */
+#main .faq-q {
+    margin-bottom: 0;
+    min-height: 60px;
+}
+#main .faq-a {
+    min-height: 60px;
+}
+}
+
+@media only screen and (max-width:580px) {
+.tesol-home #actionnavi {
+    display: block;
+}
+#actionnavi {
+    display: none;
+}
+#tesol-top-fig-box-text .tesol-top-fig-box-text-title {
+    font-size: 130%}
+}
+
+@media only screen and (max-width:540px) {
+/* top slideshow*/
+#slideshow {
+    display: none;
+}
+.tesol-home #main .tp-30px {
+    margin-top: 0!important;
+}
+}
+
+@media only screen and (max-width:520px) {
+/***
+ * Global Navigation
+ ***/
+#globalnavi .mainlinks .last a {
+    padding: 7px 6px;
+    width: auto;
+}
+#globalnavi .mainlinks .faculty a, .tesol-home #globalnavi .mainlinks .tokyo a {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+.tesol-home #globalnavi .sec-top {
+    display: none;
+}
+.tesol-home #globalnavi .mainlinks {
+    display: block;
+    float: none;
+    margin: 8px 0 0;
+}
+.tesol-home #globalnavi .mainlinks li {
+    width: 49.7%;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.tesol-home #globalnavi .mainlinks .last a, .tesol-home #globalnavi .mainlinks .faculty a {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.tesol-home #globalnavi a {
+    text-align: center;
+}
+.tesol-home #globalnavi .mainlinks li.seminars, .sec-tesol #globalnavi .mainlinks li.seminars {
+    width: 49.7%}
+
+/* Schedule */
+.schedules .tsm {
+    display: none;
+}
+}
+
+@media only screen and (max-width:480px) {
+.tesol-home #globalnavi .mainlinks {
+    margin: 8px 2% 0;
+    width: 96%}
+.tesol-home #globalnavi {
+    display: block;
+}
+#actionnavi {
+    margin: 0 0 12px;
+}
+#main a.btn-su {
+    width: auto;
+}
+.calendar .tsm {
+    display: none;
+}
+.cdp .secnavi-hr {
+    display: none;
+}
+}
+
+@media only screen and (max-width:360px) {
+.tesol-home #globalnavi .mainlinks li {
+    width: 49.5%}
+}

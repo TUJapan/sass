@@ -1,0 +1,716 @@
+/**
+ * Styles for only Cont-ed section
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+
+/***
+ * Early-bird and FTUJ price settings
+ ***/
+.ebird { display:none; } /* early-bird [default] color: red; / [off] display: none; */
+.ftuj { color:red; } /* ftuj [default] display: none; / [on] color: red; */
+
+/***
+ * Hide early-bird fee for the seminars from previous semester
+ ***/
+.seminar-SU16 .ebird { display: none; }
+
+/***
+ * Custom base styles
+ ***/
+
+
+/**************************************************************************
+ * Global Navigation
+ **************************************************************************/
+.sec-cont-ed #globalnavi .sec-top a,
+.cont-ed-home #globalnavi .mainlinks a,
+.sec-cont-ed #globalnavi .mainlinks a { background: #ffd200; color: #000; }
+.cont-ed-home #globalnavi a:hover,
+.sec-cont-ed #globalnavi a:hover {
+	background: #9e1b34;
+	color: #fff;
+}
+
+.cont-ed-home #globalnavi .sec-top a {
+	background: #9e1b34;
+	color: #fff;
+}
+
+/* on state for Cont-ed */
+.sec-cont-ed-about #globalnavi .about a,
+.sec-cont-ed-admissions #globalnavi .admissions a,
+.sec-cont-ed-courses #globalnavi .courses a,
+.sec-cont-ed-certificate #globalnavi .certificate a {
+	background: #9e1b34;
+	color: #fff;
+}
+
+
+/**************************************************************************
+ * Global Header - includes Toolbar, Section Head and Action Navigation
+ **************************************************************************/
+/***
+ * Section Head and Action Navigation
+ ***/
+#logo {
+	float: left;
+	overflow: hidden;
+	width: auto;
+}
+
+#sechead .tuj-logo {
+	display: block;
+	overflow: hidden;
+	text-indent: -999px;
+	background-position: 0 -65px;
+	width: 221px;
+	height: 40px;
+	margin: 8px 0 12px 12px;
+	float: none;
+}
+
+#sechead .pn-cont-ed {
+	display: block;
+  background: url(/cont-ed/img/sprite-cont-ed.png) no-repeat;
+	padding: 0;
+	overflow: hidden;
+	text-indent: -999px;
+	width: 152px;
+	height: 16px;
+	margin: 0 0 13px 54px;
+}
+.ja #sechead .pn-cont-ed {
+	background-position: 0 -32px;
+	height: 14px;
+	margin: 0 0 15px 54px;
+}
+
+#sechead .pn-cont-ed:hover {
+	background-position: 0 -16px;
+}
+.ja #sechead .pn-cont-ed:hover {
+	background-position: 0 -46px;
+}
+
+#actionnavi {
+	margin: 8px 10px 12px;
+}
+
+.ja #actionnavi .session a { width: 110px; }
+.ja #actionnavi .brochure a { width:110px; }
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+/***
+ * Header Styles
+ ***/
+.sec-cont-ed #main .h-sm-dark,
+.cont-ed-home #main .h-sm-dark { background: #9e1b34; }
+
+#main .box-alert-medium .h-sm-dark { color: #fff; }
+
+/***
+ * Section Navigation (Horizontal)
+ ***/
+
+ /* On state for each section */
+.sec-tokyo #main .secnavi-hr .tokyo a,
+.sec-osaka #main .secnavi-hr .osaka a,
+.sec-sennan #main .secnavi-hr .sennan a,
+.sec-faq #main .secnavi-hr .faq-courses a,
+.sec-english-level #main .secnavi-hr .english-level a { color: #67091b; }
+
+
+/***
+ * Open Box
+ ***/
+#main .box-open { border-top: 1px dashed #bbb; border-bottom: 1px dashed #bbb; padding-top: 10px; padding-bottom: 10px; margin-bottom: 30px; }
+
+
+/**************************************************************************
+ * Page Specific Styles
+ **************************************************************************/
+/* Top */
+#main .featured .link-large-red li { border-bottom: 1px dashed #bcb59f; padding-bottom: 10px; margin-bottom: 8px; }
+.box-sp p, .box-sp h4, .box-sp a { color: #fff !important; }
+.box-tokyo a { color: #ffc !important; }
+.box-tokyo { background: #09F; }
+.box-tokyo h3 { color: #FFF !important; }
+.box-sp .link-medium .li-spr {
+	background: url(/cont-ed/img/sprite-cont-ed.png) no-repeat; padding: 0 !important;
+}
+#main .box-tokyo .link-medium .li-spr {
+	background-position: -116px -289px;
+}
+
+/* Top and About top */
+#main .meet-insturctors-list li {
+	overflow: auto;
+	border-bottom: 1px dashed #bcb59f;
+	padding-bottom: 10px;
+	margin-bottom: 8px;
+}
+#main .meet-insturctors-list li img {
+	float: left;
+	padding-right: 10px;
+	width: 70px;
+	height: 70px;
+	margin-left: -30px;
+}
+
+/* faq */
+.box-faq {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 0;
+	margin: 0 0 30px 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+#main .faq-q {
+	width: auto;
+	overflow: hidden;
+	text-align: center;
+	padding: 16px 10px;
+	min-height: 78px;
+}
+#main .faq-q dt {
+	float: none;
+	font-size: 153.9%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: 600;
+	color: #9e1b34;
+	margin: 0 0 16px 0;
+}
+#main .faq-q dd { margin: 0; font-size: 108%; }
+#main .faq-a {
+	padding: 10px;
+	margin: 0;
+	background: #9e1b34;
+	min-height: 120px;
+	display: none;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+#main .faq-a * { color: #fff; }
+#main .box-faq a { color: #fff; text-decoration: underline; }
+
+/* courses */
+.p-courses .secnavi-hr { display: none; }
+
+/* course schedules */
+.bboard {
+  padding: 20px;
+	text-align: center;
+	background: url(/cont-ed/courses/img/bg-blackboard.jpg) no-repeat 0 0;
+	margin-bottom: 20px;
+}
+.ja .bboard {
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	padding: 20px 20px 15px;
+}
+#main .bboard h2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #fff;
+}
+#main .bboard h3 { color: #ff9; }
+#main .bboard h3 a { color: #ff9; text-decoration: underline; }
+#main .bboard h3 a:hover { color: #fff; }
+
+.schedules th, .calendar th { font-weight: normal; }
+.schedules td, .calendar td { text-align: center; }
+.schedules th.tct, .schedules td.tct, .calendar td.cal-dates { text-align: left; }
+.zebra tbody tr:nth-child(even) td { background: #faf8ef url(/img/noise.png) repeat 0 0 !important; }
+.tcr,
+.p-seminars .tdy { background: #fcf1c6 url(/img/noise.png) repeat 0 0 !important; color: #493e1d; }
+.ie6 .tcr,
+.ie6 .p-seminars .tdy { background: #fcf1c6 !important; }
+.zebra tbody tr:nth-child(even) td.tcr,
+.p-seminars .zebra tbody tr:nth-child(even) td.tdy { background: #f7ebbd url(/img/noise.png) repeat 0 0 !important; }
+th.tcr,
+.p-seminars th.tdy { background: #ddce9c url(/img/noise.png) repeat 0 0 !important; font-weight: 600; }
+.ie6 th.tcr,
+.ie6 .p-seminars th.tdy { background: #ddce9c !important; }
+#main .calendar th, #main .calendar td { padding: 8px 5px; }
+schedules td.tsm, .schedules td.tcr { font-size: 20px; }
+
+/* canceled course on the schedule */
+#main .schedules tr.canceled td { color: #999; }
+#main .schedules tr.canceled td.tct a { color: #999; }
+
+/* course calendar */
+.calendar .hd { text-align: left; }
+
+/* course details */
+.sem-bullet { font-size: 40px; }
+.not-offered .cd-fee, .seminar .cd-fee { text-decoration: none; }
+.canceled #main .btn-green { display: none; }
+
+.not-offered .ebird { display: none; }
+.not-offered .ftuj { display: none; }
+
+/* course search */
+#main .search-text {
+	padding: 5px;
+	height: 22px;
+	padding: 4px 6px;
+	font-size: 123.1%;
+	border: 1px solid #999;
+	width: 98%;
+}
+#main .search-button {
+	background: #67091b;
+	border: 1px solid #000;
+	margin: 0;
+	height: 32px;
+	padding: 8px 20px;
+	color: #fff;
+	font-weight: 600;
+}
+#main .search-box table, #main .search-box td { border: none; background: none; }
+
+/* Recommend engine display */
+#sbi_mix1,
+#sbi_mix2 { border-top: 1px dashed #bbb; border-bottom: 1px dashed #bbb; padding-top: 10px; padding-bottom: 0; margin-bottom: 30px; }
+#main .recommend h2,
+#main .reminder h2 { font-size: 123.1%; margin-bottom: 12px; }
+#sbi_mix2 .recommend h2 { display: none; }
+#main .recommend dl,
+#main .reminder dl { margin: 0; }
+#main .recommend dt img,
+#main .reminder dt img { width: 30px; height: 30px; }
+#main .recommend dd,
+#main .reminder dd { margin: 0 0 12px 42px; padding: 4px 0 0 0; }
+#main .reminder {
+	padding: 8px;
+	margin-bottom: 20px;
+	border: solid 1px #bead71;
+	background: #f5f0df;
+	-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+}
+#sbi_mix1 img { width: 1px; height: 1px; }
+
+/* for IE8 */
+.ie8 #main .recommend dt img,
+.ie8 #main .reminder dt img { width: auto; height: auto; }
+.ie8 #main .recommend dl,
+.ie8 #main .reminder dl { margin: 0 0 8px 0; }
+.ie8 #main .recommend dd,
+.ie8 #main .reminder dd { margin: 0 0 12px 52px; padding: 4px 0 0 0; }
+
+
+/**************************************************************************
+ * Lightbox for early bird and ftuj
+ **************************************************************************/
+#pop-box1, #pop-box2 { width: 360px; overflow: hidden; }
+@media only screen and (max-width: 600px) {
+  #pop-box1, #pop-box2 { width: auto; }
+}
+
+
+/**************************************************************************
+ * Icons
+ **************************************************************************/
+/* For link */
+.link-cats {
+	margin: 0;
+	list-style: none;
+	width: 95%;
+}
+.link-cats .li-spr {
+	display: block;
+	float: left;
+	background: url(/cont-ed/img/sprite-cont-ed.png) no-repeat; padding: 0 !important;
+}
+#main .link-cats { margin-bottom: 20px; }
+.link-cats li { padding: 10px 0 0 50px; }
+.link-cats a { font-size: 116%; font-weight: 600; }
+.link-cats .li-spr {
+	width: 42px;
+	height: 42px;
+	margin: -10px 0 0 -50px;
+}
+.ie6 .link-cats .li-spr { margin: -10px 4px 0 -25px; }
+.link-cats .cat-language { background-position: 0 -60px; }
+.link-cats .cat-academic-skills { background-position: -42px -60px; }
+.link-cats .cat-culture-and-arts { background-position: -84px -60px; }
+.link-cats .cat-professional { background-position: 0 -102px; }
+.link-cats .cat-business { background-position: -42px -102px; }
+.link-cats .cat-computer { background-position: -84px -102px; }
+
+/* small icons */
+#main .link-cats-sm { margin-bottom: 20px; }
+.link-cats-sm li { padding: 4px 0 4px 42px; }
+.link-cats-sm a { font-size: 100%; font-weight: normal; }
+.link-cats-sm .li-spr {
+	width: 30px;
+	height: 30px;
+	margin: -4px 0 0 -38px;
+}
+.ie6 .link-cats-sm .li-spr { margin: -4px 4px 0 -19px; }
+.link-cats-sm .cat-language { background-position: 0 -186px; }
+.link-cats-sm .cat-academic-skills { background-position: -30px -186px; }
+.link-cats-sm .cat-culture-and-arts { background-position: -60px -186px; }
+.link-cats-sm .cat-professional { background-position: -90px -186px; }
+.link-cats-sm .cat-business { background-position: 0 -216px; }
+.link-cats-sm .cat-computer { background-position: -30px -216px; }
+
+.spr-cont-ed {
+	background: url(/cont-ed/img/sprite-cont-ed.png) no-repeat;
+	padding: 0 !important;
+}
+
+.cl,
+#main .links .cl {
+	width: 63px;
+	height: 13px;
+	background-position: 0px -247px;
+	margin: 0 0 0 4px;
+	display: inline-block;
+	float: none;
+}
+
+.ico-canceled,
+#main .links .ico-canceled {
+	width: 49px;
+	height: 13px;
+	background-position: 0px -275px;
+	margin: 0 0 0 4px;
+	display: inline-block;
+	float: none;
+}
+.ico-wait,
+#main .links .ico-wait {
+	width: 60px;
+	height: 13px;
+	background-position: -50px -275px;
+	margin: 0 0 0 4px;
+	display: inline-block;
+	float: none;
+}
+.ja .ico-canceled,
+.ja #main .links .ico-canceled {
+	background-position: 0px -289px;
+}
+.ja .ico-wait,
+.ja #main .links .ico-wait {
+	width: 65px;
+	background-position: -50px -289px;
+}
+
+/* "?" icon */
+.qm {
+  display: block;
+	width: 12px;
+	height: 12px;
+	text-indent: -999px;
+	background-position: 0px -261px;
+	display: inline-block;
+	float: none;
+	overflow: hidden;
+}
+
+
+/**************************************************************************
+ * Button
+ **************************************************************************/
+/* button style */
+#main a.btn-green {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 10px 16px;
+	background: #175b0e;
+	background: -moz-linear-gradient(
+		top,
+		#21a42c 0%,
+		#175b0e);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#21a42c),
+		to(#175b0e));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #175b0e;
+	-moz-box-shadow:
+		1px 2px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		1px 2px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	text-shadow:
+		-1px -1px 0px rgba(023,091,014,0.4),
+		1px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-green:hover {
+	text-decoration: none;
+	background: #217813;
+	background: -moz-linear-gradient(
+		top,
+		#25c733 0%,
+		#217813);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#25c733),
+		to(#217813));
+}
+.ie6 #main a.btn-green:visited {
+  color: #fff;
+}
+
+#main a.btn-orange {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	font-weight: 600;
+	color: #ffffff;
+	padding: 12px 20px;
+	background: #ff7f0f;
+	background: -moz-linear-gradient(
+		top,
+		#ffae00 0%,
+		#ff7f0f);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffae00),
+		to(#ff7f0f));
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #ee7a48;
+	-moz-box-shadow:
+		1px 2px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		1px 2px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 0px rgba(255,255,255,0);
+	text-shadow:
+		-1px -1px 0px rgba(168,076,027,0.4),
+		1px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-orange:hover {
+	text-decoration: none;
+	background: #ffaa00;
+	background: -moz-linear-gradient(
+		top,
+		#ffdf0f 0%,
+		#ffaa00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffdf0f),
+		to(#ffaa00));
+}
+
+.cont-ed-home #main a.btn-green, .cont-ed-home #main a.btn-orange { padding: 14px 20px; }
+
+
+#main a.btn-blue {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	padding: 12px 20px;
+	background: #063461;
+	background: -moz-linear-gradient(
+		top,
+		#1a5ea2 0%,
+		#063461);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#1a5ea2),
+		to(#063461));
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 1px rgba(000,000,000,0.4),
+		inset 0px 0px 3px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 1px rgba(000,000,000,0.4),
+		inset 0px 0px 3px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.1),
+		0px 0px 0px rgba(255,255,255,1);
+}
+#main a.btn-blue:hover {
+	text-decoration: none;
+	background: #094580;
+	background: -moz-linear-gradient(
+		top,
+		#2070bf 0%,
+		#094580);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#2070bf),
+		to(#094580));
+}
+.ie6 #main a.btn-blue:visited {
+  color: #fff;
+}
+
+#main a.btn-red {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	padding: 8px 4% 10px;
+	background: #9e1b34;
+	background: -moz-linear-gradient(top, #d54661 0%, #67091b);
+	background: -webkit-gradient(linear, left top, left bottom, from(#d54661), to(#67091b));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #67091b;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.7), 0px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-red:hover {
+	background: #c25665;
+	text-decoration: none;
+	background: -moz-linear-gradient(top, #faafaf 0%, #9e1b34);
+	background: -webkit-gradient(linear, left top, left bottom, from(#faafaf), to(#9e1b34));
+}
+#main a.btn-su { width: 45%; }
+
+/**************************************************************************
+ * Media queries for responsive design.
+ * These follow after primary styles so they will successfully override.
+ **************************************************************************/
+/**************************************************************************
+ * For High Res Display
+**************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-device-pixel-ratio: 2) {
+#sechead .pn-cont-ed,
+.box-sp .link-medium .li-spr,
+.link-cats .li-spr,
+.spr-cont-ed {
+	background-image: url(/cont-ed/img/sprite-cont-ed2x.png);
+	background-size: 152px 302px;
+}
+}
+
+
+/**************************************************************************
+ * Desktop
+**************************************************************************/
+@media screen and (max-width: 900px) {
+#main dl.cd-fees dt { float: none; }
+#main dl.cd-fees dd	{ margin: 0 0 14px 0; }
+}
+@media screen and (max-width: 780px) {
+/* Hide schedule table columns */
+.tfe, .schedules .ebird, .schedules .ftuj, .thr { display: none; }
+}
+@media only screen and (max-width: 700px) {
+#main .featured .grid-6 { float: none; margin: 0; width: auto; }
+}
+@media screen and (max-width: 600px) {
+/* global navi */
+.cont-ed-home #globalnavi .mainlinks,
+.sec-cont-ed #globalnavi .mainlinks { width: 100%; }
+.cont-ed-home #globalnavi .mainlinks li,
+.sec-cont-ed #globalnavi .mainlinks li { width: auto; }
+.cont-ed-home #globalnavi .mainlinks .last,
+.sec-cont-ed #globalnavi .mainlinks .last {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+/* action navi */
+.ja #actionnavi .session a { width: 104px; }
+.ja #actionnavi .brochure a { width: 104px; }
+
+/* courses */
+.p-courses .secnavi-hr { display: block; }
+
+/* Course detail page */
+#main dl.cd-fees dt, #main dl.cd-spec dt { float: left; }
+#main dl.cd-fees dd	{ margin: 0 0 12px 140px; }
+#main dl.cd-spec dd	{ margin: 0 0 12px 120px; }
+
+/* faq */
+#main .faq-q {
+	margin-bottom: 0;
+	min-height: 60px;
+}
+#main .faq-a {
+	min-height: 60px;
+}
+}
+@media only screen and (max-width: 540px) {
+.cont-ed-home #actionnavi { display: block; }
+.ja #actionnavi .session a { width: auto; }
+.ja #actionnavi .brochure a { width: auto; }
+
+/* top slideshow*/
+#slideshow { display: none; }
+.cont-ed-home #main .tp-20px { margin-top: 0 !important; }
+}
+@media only screen and (max-width: 520px) {
+/***
+ * Global Navigation
+ ***/
+.cont-ed-home #globalnavi .sec-top { display: none; }
+.cont-ed-home #globalnavi .mainlinks { display: block; float: none; margin: 8px 0 0; }
+.cont-ed-home #globalnavi .mainlinks li { width: 49.7%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
+.cont-ed-home #globalnavi .mainlinks .last, #globalnavi .mainlinks .programs a {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.cont-ed-home #globalnavi a { text-align: center; }
+.cont-ed-home #globalnavi .mainlinks .admissions a {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+/***
+ * Section Head and Action Navigation
+ ***/
+.cont-ed-home #actionnavi { display: block; }
+#actionnavi { display: none; }
+
+/* Schedule */
+.schedules .tsm { display: none; }
+}
+@media only screen and (max-width: 480px) {
+/***
+ * Global Navigation
+ ***/
+.cont-ed-home #globalnavi .mainlinks { margin: 8px 2% 0; width: 96%; }
+.cont-ed-home #globalnavi { display: block; }
+#actionnavi { margin: 0 0 12px; }
+
+#main a.btn-su { width: auto; }
+.cdp .secnavi-hr { display: none; }
+.calendar .tsm { display: none; }
+
+/* Recommend display styles */
+#main .recommend dt,
+#main .reminder dt { float: left; }
+}
+@media only screen and (max-width: 360px) {
+.cont-ed-home #globalnavi .mainlinks li { width: 49.5%; }
+
+.sec-tokyo #main .secnavi-hr .tokyo a,
+.sec-osaka #main .secnavi-hr .osaka a,
+.sec-sennan #main .secnavi-hr .sennan a,
+.sec-faq #main .secnavi-hr .faq-courses a,
+.sec-english-level #main .secnavi-hr .english-level a { background: #9e1b34; color: #fff; }
+/* Recommend display styles */
+#main .recommend dd,
+#main .reminder dd { padding: 0; }
+}
