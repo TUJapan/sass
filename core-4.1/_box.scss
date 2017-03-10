@@ -1,0 +1,73 @@
+/***
+ * Aside Box
+ ***/
+.box {
+	padding: 8px;
+	margin-bottom: 30px;
+	width: auto;
+	overflow: hidden;
+}
+#main .box .last-item { margin-bottom: 10px; }
+
+/* subcontent boxes */
+.box-sub {
+	border: solid 1px #bead71;
+	background: #f5f0df;
+}
+.box-sub-light {
+	background: #f5f0df;
+}
+.box-sub-medium {
+	border: solid 3px #7f6e30;
+	background: #f5f0df;
+}
+.box-sub-strong {
+	background: #9e1b34;
+	color: #fff;
+}
+#main .box-sub-strong * { color: #fff; }
+
+#main .box-sub .h-sm-light,
+#main .box-sub-medium .h-sm-light {
+	background: #82795d;
+	color: #fff;
+}
+
+#main .box-sub-light .h-sm-light {
+	background: #b0a37b;
+	color: #fff;
+}
+
+/* alert boxes */
+.box-alert {
+	border: solid 1px #ff0000;
+	background: #fff;
+}
+.box-alert-medium {
+	border: solid 3px #ff0000;
+	background: #ffe1e1;
+}
+.box-alert-strong {
+	background: #ff0000;
+	color: #fff;
+}
+#main .box-alert h1,
+#main .box-alert h2,
+#main .box-alert h3,
+#main .box-alert-medium h1,
+#main .box-alert-medium h2,
+#main .box-alert-medium h3 { color: #000; }
+#main .box-alert-strong * { color: #fff; }
+#main .box-alert p,
+#main .box-alert-medium p { color: #000; }
+
+/* round corners for boxes */
+.box-round { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+
+
+@media only screen and (max-width: 600px) {
+.box {
+	padding: 6px;
+	margin-bottom: 20px;
+}
+}

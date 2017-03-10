@@ -1,0 +1,100 @@
+/**************************************************************************
+ * Breadcrumb Navigation
+ **************************************************************************/
+#bcnavi {
+	background: #9e1b34;
+	margin-top: 30px;
+	border-top: 1px solid #bcb59f;
+	overflow: hidden;
+	width: auto;
+	padding: 0;
+}
+#bcnavi h1 {
+	font-size: 100%;
+	font-weight: 600;
+	color: #fff;
+	padding: 12px 18px 12px 12px;
+	float: left;
+	background: url(/img/sprite.png) no-repeat right -216px;
+	margin: 0;
+}
+#bcnavi ul {
+	float: left;
+}
+#bcnavi ul li {
+	display: block;
+	float: left;
+	padding: 12px 14px 11px 22px;
+	margin: 0;
+}
+#bcnavi .bc-top {
+	padding: 12px 6px 11px 12px;
+}
+#bcnavi .bc-last {
+	font-weight: 600;
+	color: #bcb59f;
+}
+#bcnavi a {
+	color: #fff;
+	text-decoration: none;
+}
+#bcnavi a:hover { text-decoration: underline; }
+#bcnavi .bc-arrow {
+	display: block;
+	float: left;
+	width: 5px;
+	height: 6px;
+	background-position: -15px -107px;
+	position: relative;
+	top: 5px;
+	left: -14px;
+}
+
+/* IE fix -> see ie.css */
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+#bcnavi h1 {
+	background-image: url(/img/sprite2x.png);
+	background-size: 285px 300px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+#bcnavi h1 {
+	width: 100%;
+	padding: 12px 18px 12px 12px;
+	float: none;
+	background: #67091b;
+}
+#bcnavi ul {
+	float: none;
+	width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+#bcnavi h1 { font-size: 108%; }
+#bcnavi ul { overflow: hidden; padding: 3px 0 6px 0; }
+#bcnavi ul li {
+	padding: 8px 4px 7px 18px;
+	font-size: 108%;
+}
+#bcnavi .bc-top {
+	padding: 8px 6px 7px 12px;
+}
+#bcnavi .bc-arrow {
+	left: -8px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#bcnavi h1 { font-size: 116%; }
+#bcnavi ul li {
+	font-size: 116%;
+}
+}

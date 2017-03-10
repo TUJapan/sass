@@ -1,0 +1,40 @@
+/* Block Grid Structure for Main */
+.block-grid {
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+.block-grid.bg-3 li {
+	float: left;
+	width: 31.9%;
+	margin: 0 0.7%;
+	display: inline-block;
+	height: auto;
+}
+
+.block-grid.bg-3 li:nth-of-type(3n+1) {
+  clear: left;
+}
+
+@media screen and (max-width: 700px){
+.block-grid.md-bg-2 li {
+  width: 48%;
+}
+
+.block-grid.md-bg-2 li:nth-of-type(n) {
+  clear: none;
+}
+.block-grid.md-bg-2 li:nth-of-type(2n+1) {
+  clear: left;
+}
+}
+
+@media screen and (max-width: 480px){
+.block-grid.sm-bg-1 li {
+  width: 100%;
+	margin: 0;
+}
+}

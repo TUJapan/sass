@@ -1,0 +1,164 @@
+/***
+ * Section Navigation (Horizontal)
+ ***/
+#main .secnavi-hr {
+	border-bottom: 3px solid #bcb59f;
+	margin-bottom: 20px;
+}
+#main .secnavi-hr h1 {
+	margin-left: 6px;
+	float: left;
+	color: #6c6345;
+}
+#main .secnavi-hr h1 a { color: #6c6345; }
+#main .secnavi-hr nav { margin-bottom: 0; }
+#main .secnavi-hr ul {
+	float: right;
+	margin: 0 8px 0 0;
+}
+#main .secnavi-hr li {
+	float: left;
+	margin: 4px 0 8px 24px;
+}
+#main .secnavi-hr a:hover { text-decoration: none; }
+
+/* IE fix -> see ie.css */
+
+/* On state for each section */
+.sec-quick-overview #main .secnavi-hr .quick-overview a,
+.sec-faq #main .secnavi-hr .faq a,
+.sec-japan-campus #main .secnavi-hr .japan-campus a,
+.sec-main-campus #main .secnavi-hr .main-campus a,
+.sec-lectures #main .secnavi-hr .lectures a,
+.sec-special #main .secnavi-hr .special a,
+.sec-students #main .secnavi-hr .students a,
+.sec-maps-tokyo #main .secnavi-hr .tokyo a,
+.sec-maps-osaka #main .secnavi-hr .osaka a,
+.sec-staff #main .secnavi-hr .staff a,
+.sec-faculty #main .secnavi-hr .faculty a,
+.sec-news-news #main .secnavi-hr .news a,
+.sec-media #main .secnavi-hr .media a,
+.sec-why #main .secnavi-hr .why a,
+.sec-ways #main .secnavi-hr .ways a,
+.sec-donate #main .secnavi-hr .donate a,
+.sec-payroll #main .secnavi-hr .payroll a { color: #67091b; }
+
+/***
+ * Section Navigation (Vertical)
+ ***/
+#main .secnavi-vert div {
+	margin: 3px;
+	-moz-box-shadow: 0 1px 3px #bcb59f;
+	-webkit-box-shadow: 0 1px 3px #bcb59f;
+	box-shadow: 0 1px 3px #bcb59f;
+	padding: 7px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff url(/img/noise.png) repeat 0 0;
+}
+#main .secnavi-vert h1 {
+	background: #e5dcbf url(/img/noise.png) repeat 0 0;
+	border-bottom: 2px solid #82754a;
+	font-size: 116%;
+	padding: 7px 6px;
+	margin: 0 6px;
+	color: #6c6345;
+	font-family: Arial, Helvetica, sans-serif;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+#main .secnavi-vert h1 a {
+	padding: 0;
+	background: #e5dcbf url(/img/noise.png) repeat 0 0;
+	color: #6c6345;
+}
+#main .secnavi-vert h1 a:hover {
+	background: #e5dcbf url(/img/noise.png) repeat 0 0;
+	color: #9e1b34;
+}
+.ja #main .secnavi-vert h1 { font-size: 116%; }
+#main .secnavi-vert h2 {
+	background: #f3eedd url(/img/noise.png) repeat 0 0;
+	border-bottom: 1px solid #bcb59f;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 6px 6px;
+	margin: 0 6px;
+	color: #6c6345;
+}
+.ja #main .secnavi-vert h2 { font-size: 100%; }
+#main .secnavi-vert ul {
+	margin: 0 6px;
+	line-height: 120%;
+}
+#main .secnavi-vert ul li {
+	border-bottom: 1px solid #bcb59f;
+	margin: 0;
+}
+#main .secnavi-vert ul li ul { margin: 0; }
+#main .secnavi-vert ul li ul li {
+	border-bottom: none;
+	border-top: 1px dotted #aaa;
+}
+#main .secnavi-vert a {
+	display: block;
+	padding: 7px 6px;
+	font-size: 93%;
+	font-weight: 600;
+	background: #fff;
+}
+#main .secnavi-vert ul li ul li a { font-weight: 500; padding: 7px 6px 7px 14px; background: #efefef; }
+#main .secnavi-vert a:hover { background: #772d3b; color: #fff; text-decoration: none; }
+
+/* IE fix -> see ie.css */
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 600px) {
+#main .secnavi-hr h1 { margin-left: 0; }
+#main .secnavi-hr ul { margin: 0 0 10px; }
+#main .secnavi-hr li { margin: 4px 20px 8px 0; }
+#main .secnavi-vert { margin-bottom: 30px; }
+}
+
+@media only screen and (max-width: 360px) {
+#main .secnavi-hr {
+	padding: 6px;
+	border: 1px solid #bcb59f;
+	width: auto;
+	border-radius: 6px;
+	background: #fff;
+}
+#main .secnavi-hr h1 {
+	float: none;
+	margin: 0;
+	border-bottom: 2px solid #bcb59f;
+	font-size: 123.1%;
+	padding: 0 0 3px;
+}
+#main .secnavi-hr ul,
+#main .secnavi-hr li { margin: 0; float: none; }
+#main .secnavi-hr li a { border-bottom: 1px solid #bcb59f; margin: 0; padding: 2px 3px; width: 100%; display: block; font-size: 93%; }
+.sec-quick-overview #main .secnavi-hr .quick-overview a,
+.sec-faq #main .secnavi-hr .faq a,
+.sec-japan-campus #main .secnavi-hr .japan-campus a,
+.sec-main-campus #main .secnavi-hr .main-campus a,
+.sec-lectures #main .secnavi-hr .lectures a,
+.sec-special #main .secnavi-hr .special a,
+.sec-students #main .secnavi-hr .students a,
+.sec-maps-tokyo #main .secnavi-hr .tokyo a,
+.sec-maps-osaka #main .secnavi-hr .osaka a,
+.sec-staff #main .secnavi-hr .staff a,
+.sec-faculty #main .secnavi-hr .faculty a,
+.sec-news-news #main .secnavi-hr .news a,
+.sec-media #main .secnavi-hr .media a,
+.sec-why #main .secnavi-hr .why a,
+.sec-ways #main .secnavi-hr .ways a,
+.sec-donate #main .secnavi-hr .donate a,
+.sec-payroll #main .secnavi-hr .payroll a { background: #9e1b34; color: #fff; }
+#main .secnavi-vert { margin-bottom: 30px; }
+}

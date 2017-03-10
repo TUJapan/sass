@@ -1,0 +1,64 @@
+/***
+ * Heading Styles
+ ***/
+#main .h-border {
+	border-top: 1px solid #bcb59f;
+	border-bottom: 1px solid #bcb59f;
+	padding: 8px 10px;
+	margin: 0 0 20px 0;
+	background: transparent url(/img/bg-stripe.png) repeat 0 0;
+	color: #6c6345;
+}
+#main .h-md-light,
+#main .h-md-dark {
+	background: url(/img/bg-h-md-light.gif) no-repeat left bottom;
+	padding: 2px 2px 9px;
+	margin-bottom: 14px;
+	font-size: 138.5%;
+	color: #6c6345;
+}
+#main .h-md-dark {
+	background: url(/img/bg-h-md-dark.gif) no-repeat left bottom;
+	color: #313953;
+}
+#main .h-sm-light,
+#main .h-sm-dark {
+	background: #ede9db;
+	color: #6a6863;
+	padding: 6px;
+	margin-bottom: 10px;
+	font-size: 108%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#main .h-sm-dark {
+	background: #2e2958;
+	color: #fff;
+}
+
+#main .h-job-req {
+	font-size: 108%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dark small header for program sections */
+body.sec-tesol #main .h-sm-dark { background: #073b00; }
+
+/* IE fix -> see ie.css */
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 480px) {
+#main .h-sm-light,
+#main .h-sm-dark,
+#main .h-job-req,
+#main .news-media-link,
+#main .news-subhead { font-size: 123.1%; }
+#main .news-date { font-size: 108%; }
+
+#main .h-border {
+	padding: 6px;
+	margin: 0 0 16px 0;
+}
+}

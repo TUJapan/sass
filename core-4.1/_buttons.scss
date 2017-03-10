@@ -1,0 +1,80 @@
+/* button */
+#main a.btn-green {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	padding: 8px 4% 10px;
+	background: #449429;
+	background: -moz-linear-gradient(top, #19a82e 0%, #449429 50%, #10520a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#19a82e), color-stop(0.50, #449429), to(#10520a));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #104f10;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.7), 0px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-green:hover {
+	text-decoration: none;
+	background: #25731e;
+	background: -moz-linear-gradient(top, #46cc58 0%, #5fb041 50%, #25731e);
+	background: -webkit-gradient(linear, left top, left bottom, from(#46cc58), color-stop(0.50, #5fb041), to(#25731e));
+}
+.ie6 #main a.btn-green:visited {
+  color: #fff;
+}
+
+#main a.btn-red {
+	display: block;
+	text-align: center;
+	font-size: 116%;
+	color: #ffffff;
+	margin: 6px;
+	padding: 10px 20px;
+	background: #9e1b34;
+	background: -moz-linear-gradient(
+		top,
+		#cf2d4e 0%,
+		#5c1221);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#cf2d4e),
+		to(#5c1221));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #9e1b33;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,0.4);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(255,255,255,0.4);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+#main a.btn-red:hover {
+	text-decoration: none;
+	background: #b32b48;
+	background: -moz-linear-gradient(top, #b32b48 0%, #420e1a);
+	background: -webkit-gradient(linear, left top, left bottom, from(#b32b48), to(#420e1a));
+}
+.ie6 #main a.btn-red:visited {
+  color: #fff;
+}
+
+#main a.btn-50pc { width: 50%; }
+#main a.btn-60pc { width: 60%; }
+
+#main a.btn-center { margin-left: auto; margin-right: auto; }
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 800px) {
+#main a.btn-50pc { width: 90%; }
+#main a.btn-60pc { width: 90%; }
+}

@@ -1,0 +1,78 @@
+/***
+ * Images
+ ***/
+#main .img-border {
+	border: 1px solid #6c6345;
+	max-width: 99%;
+}
+#main .img-video,
+#main .img-event {
+	max-width: 96%;
+	border: 1px solid #bcb59f;
+	padding: 3px;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#main .orig-size img { width: auto; }
+
+/* content with image thumbnails */
+#main .tmb-alignleft,
+#main .tmb-alignright,
+#main .tmb-aligncenter {
+	overflow: hidden;
+	width: auto;
+}
+#main .tmb-alignleft figure {
+	float: left;
+	margin: 0 10px 0 0;
+}
+#main .tmb-alignright figure {
+	float: right;
+	margin: 0 0 0 10px;
+}
+#main .tmb-aligncenter figure {
+	margin: 0 auto;
+	text-align: center;
+}
+#main .tmb-alignleft figure img,
+#main .tmb-alignright figure img,
+#main .tmb-aligncenter figure img {
+	border: 1px solid #bcb59f;
+	padding: 2px;
+	background: #fff;
+}
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 1140px) {
+#main figure.img-large { float: none; margin: 0 0 30px 0; }
+}
+
+@media only screen and (max-width: 600px) {
+#main .tmb-alignleft figure,
+#main .tmb-alignright figure,
+#main .tmb-aligncenter figure {
+	float: none;
+	margin: 0 0 10px 0;
+}
+#main .tmb-alignleft img,
+#main .tmb-alignright img,
+#main .tmb-aligncenter img {
+	width: 30%;
+}
+
+#main .img-event, #main .img-video { width: auto; }
+}
+
+@media only screen and (max-width: 480px) {
+#main figure.alignleft,
+#main figure.alignright,
+#main figure.aligncenter {
+	float: none;
+	margin: 0;
+	text-align: left;
+}
+}

@@ -1,0 +1,362 @@
+/**************************************************************************
+ * Minimal base styles.
+ **************************************************************************/
+/* Always force a scrollbar in non-IE */
+html { overflow-y: scroll; background: #423e32 url(/img/noise.png) repeat 0 0; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+small { font-size: 85%; }
+strong, th { font-weight: 600; }
+em { font-style: italic; padding-right: 2px; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+/* selected text */
+::-moz-selection{ background: #ffad2b; color:#fff; text-shadow: none; }
+::selection { background: #ffad2b; color:#fff; text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: none; }
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/***
+ * Custom base styles
+ ***/
+body { color: #6c6345; }
+#top { background: #fffdf4 url(/img/noise.png) repeat 0 0; }
+.ie6 #top { background: #fffdf4; }
+.break-word { word-break: break-all; }
+
+/* Basic styling for flexible grid based on 1104 CSS Grid: cssgrid.net */
+#globalheader, #mainnavi, #main, #bcnavi, #globalfooter { padding: 0 10px; }
+.content { width: 100%; max-width: 1140px; min-width: 755px; margin: 0 auto; overflow: hidden; }
+
+
+
+/**************************************************************************
+ * Main Block Standard HTML Element Styles
+ **************************************************************************/
+
+/***
+ * Base Styles
+ ***/
+
+/* Margins for block elements */
+#main p,
+#main blockquote,
+#main code,
+#main dl,
+#main figure,
+#main ol,
+#main ul,
+#main table { margin-bottom: 30px; }
+
+/* Base font size, color, line-height */
+#main p,
+#main dl,
+#main ol,
+#main pre,
+#main ul,
+#main table {
+	font-size: 108%;
+	line-height: 150%;
+	color: #6c6345;
+}
+.ja #main p,
+.ja #main dl,
+.ja #main ol,
+.ja #main pre,
+.ja #main ul,
+.ja #main table {
+	font-size: 100%;
+	line-height: 161.6%;
+}
+
+#main table.f11 { font-size: 85%; }
+#main table.f12 { font-size: 93%; }
+#main table.f13 { font-size: 100%; }
+
+/* set font family */
+#main h1,
+#main h2 { font-family: Georgia,serif; }
+.ja #main h1,
+.ja #main h2,
+.ja #main h3,
+.ja #main h4,
+.ja #main h5,
+.ja #main h6 { font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; }
+
+/***
+ * Standard HTML Styles
+ ***/
+#main a,
+#main a:active,
+#main a:visited {
+	color: #cf4e67;
+	text-decoration: none;
+}
+#main a:hover {
+	color: #772d3b;
+	text-decoration: underline;
+}
+#main b { font-weight: 600; }
+#main blockquote {
+	padding: 6px 54px 0;
+	background: url(/img/bg_big_quote.gif) no-repeat 5px 0;
+}
+#main cite { font-style: italic; }
+#main code {
+	padding: 10px;
+	background: #ccc;
+}
+
+#main figcaption {
+	font-size: 85%;
+	line-height: 150%;
+	margin: 8px 0 0;
+}
+#main figure.alignleft {
+	float: left;
+	margin: 0 30px 0 0;
+	padding-bottom: 30px;
+}
+#main figure.alignright {
+	float: right;
+	margin: 0 0 0 30px;
+	padding-bottom: 30px;
+}
+#main figure.aligncenter {
+	margin: 0 auto;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#main i {
+	font-style: italic;
+	padding-right: 2px;
+}
+#main img,
+#main video {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* for ie8 */
+}
+
+/* List Styles */
+#main ol ol,
+#main ul ol {
+	font-size: 100%;
+	margin-bottom: 0;
+}
+#main ol ul,
+#main ul ul {
+	font-size: 100%;
+	margin-bottom: 0;
+	list-style-type: disc;
+}
+#main li { margin-bottom: 10px; }
+#main ol.upper-alpha { list-style-type: upper-alpha; }
+#main ol.lower-alpha { list-style-type: lower-alpha; }
+#main p {
+	width: auto;
+	overflow: hidden;
+}
+
+#main dl {
+	width: 100%;
+	overflow: hidden;
+}
+#main dt {
+	float: left;
+	font-weight: 600;
+}
+#main dd { margin: 0 0 12px 200px; }
+#main dd ul,
+.ja #main dd ul { font-size: 100%; }
+
+/* Table Styles */
+#main table {
+	border-left: solid 1px #bead71;
+	border-top: solid 1px #bead71;
+	border-collapse: collapse;
+}
+#main th,
+#main td {
+	border-right: solid 1px #bead71;
+	border-bottom: solid 1px #bead71;
+	padding: 3px 5px;
+	vertical-align: top;
+	background: #fffefb url(/img/noise.png) repeat 0 0;
+}
+#main th { background: #eae2c7; }
+
+#main .valign-mid { vertical-align: middle; }
+#main .align-center { text-align: center; }
+
+/* optional table styles */
+#main .table-full-column { width: 100%; }
+#main .table-alignleft { text-align: left; }
+#main .table-aligncenter { text-align: center; }
+#main .table-alignright { text-align: right; }
+#main .table-alignmiddle { vertical-align: middle; }
+
+
+/* for elastic videos (non-HTML5 video tags) */
+#main .video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+#main .video iframe,
+#main .video embed,
+#main .video object {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* for iframe forms */
+#main .nsform {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+#main .nsform iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* IE fix -> see ie.css */
+
+
+/**************************************************************************
+ * Custom Common Elements;
+ **************************************************************************/
+
+/***
+ * Paragraph Styles
+ ***/
+
+/* notes */
+#main .notes {
+	border-top: dashed 1px #bcb59f;
+	border-bottom: dashed 1px #bcb59f;
+	padding: 8px;
+	margin: 0 0 30px 0;
+}
+#main .notes-light {
+	padding: 4px 0;
+	margin: 0 0 30px 0;
+}
+#main .notes p,
+#main .notes ol,
+#main .notes ul,
+#main .notes-light p,
+#main .notes-light ol,
+#main .notes-light ul {
+	font-size: 100%;
+	margin-bottom: 0;
+}
+#main .notes li,
+#main .notes-light li { margin-bottom: 0; }
+#main span.note {
+	font-size: 85%;
+	line-height: 130%;
+	display: block;
+}
+
+/* paragraph with last updated date */
+#main .update-date {
+	text-align: right;
+	padding-right: 6px;
+}
+
+/* optional bottom margin */
+#main .bm-30px { margin-bottom: 30px !important; }
+#main .bm-20px { margin-bottom: 20px !important; }
+#main .bm-10px { margin-bottom: 10px !important; }
+#main .bm-none { margin-bottom: 0 !important; }
+
+/* optional top margin */
+#main .tp-30px { margin-top: 30px !important; }
+#main .tp-20px { margin-top: 20px !important; }
+#main .tp-10px { margin-top: 10px !important; }
+#main .tp-none { margin-top: 0 !important; }
+
+/* optional text alignment */
+#main .text-center { text-align: center !important; }
+
+
+/**************************************************************************
+ * Media queries
+ **************************************************************************/
+
+@media only screen and (max-width: 480px) {
+#main p,
+#main dl,
+#main ol,
+#main pre,
+#main ul,
+#main table {
+	font-size: 123.1%;
+}
+#main ul ul, #main ul ol, #main ol ul, #main ol ol { font-size: 100%; }
+
+/* for Japanese text*/
+.ja #main p,
+.ja #main dl,
+.ja #main ol,
+.ja #main pre,
+.ja #main ul,
+.ja #main table {
+	font-size: 123.1%;
+}
+.ja #main ul ul, .ja #main ul ol, .ja #main ol ul, .ja #main ol ol { font-size: 100%; }
+
+
+#main blockquote { padding: 6px 24px 0 54px; background: url(/img/bg_big_quote.gif) no-repeat 5px 0; }
+#main dt, #main dl.dt-80px dt, #main dl.dt-100px dt, #main dl.dt-120px dt, #main dl.dt-140px dt, #main dl.dt-160px dt, #main dl.dt-200px dt, #main dl.dt-240px dt { float: none; }
+#main dd, #main dl.dt-80px dd, #main dl.dt-100px dd, #main dl.dt-120px dd, #main dl.dt-140px dd, #main dl.dt-160px dd, #main dl.dt-200px dd, #main dl.dt-240px dd { margin: 0 0 14px 0; }
+#main table { width: 100%; }
+#main img, #main embed, #main object, #main video { width: 100%; }
+#main .orig-size img { width: auto; }
+#main .tweet_list img { width: 100%; }
+}
+
+@media only screen and (max-width: 360px) {
+#main img, #main embed, #main object, #main video { width: 100%; }
+
+/* Notes */
+#main .notes {
+	padding: 6px;
+}
+}

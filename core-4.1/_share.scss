@@ -1,0 +1,27 @@
+/**************************************************************************
+ * Share Buttons
+ **************************************************************************/
+.share-content {
+	margin-top: 20px;
+	padding: 10px 10px 0;
+	background: #e9e6d4 url(/img/noise.png) repeat 0 0;
+	width: auto;
+	overflow: auto;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px; }
+#main .share-content h1 { color: #6f6d64; }
+#btn-twt, #btn-fb, #btn-gp, #btn-li, #btn-su, #btn-mixi { float: left; height: 30px; margin: 0 20px 0 0; }
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 800px) {
+.share-content .grid { float: none; width: auto; margin: 0; }
+}
+
+@media only screen and (max-width: 600px) {
+#btn-twt, #btn-li, #btn-gp, #btn-su, #btn-fb { height: 36px; }
+#btn-li { float: none; }
+}

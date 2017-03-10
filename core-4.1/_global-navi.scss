@@ -1,0 +1,109 @@
+/**************************************************************************
+ * Global Navigation
+ **************************************************************************/
+/* base styles */
+#globalnavi .sec-top {
+	float: left;
+	margin: 0;
+	line-height: 138.5%;
+}
+#globalnavi .mainlinks { float: left; }
+#globalnavi a {
+	display: block;
+	padding: 7px 20px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 100%;
+	line-height: 138.5%;
+	font-family: Arial, Helvetica, sans-serif; }
+.ja #globalnavi a { font-size: 108%; }
+#globalnavi .sec-top a {
+	background: #9e1b34;
+	color: #fff;
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+#globalnavi .mainlinks li { float: left; }
+#globalnavi .mainlinks .last {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+#globalnavi .mainlinks a {
+	background: #9e1b34;
+	color: #fff;
+}
+#globalnavi a:hover {
+	background: #67091b;
+	color: #fff;
+}
+
+/* on state for each section */
+.home #globalnavi .sec-top a,
+.sec-about #globalnavi .about a,
+.sec-admissions #globalnavi .admissions a,
+.sec-programs #globalnavi .programs a,
+.sec-community #globalnavi .community a,
+.sec-services #globalnavi .services a,
+.sec-news #globalnavi .news a,
+.sec-events #globalnavi .events a {
+	color: #fff;
+	background: #67091b;
+}
+
+/* Media queries */
+@media only screen and (max-width: 890px) {
+#globalnavi a { padding: 7px 11px; }
+}
+
+@media only screen and (max-width: 600px) {
+#globalnavi .sec-top { display: none; }
+#globalnavi .mainlinks li { width: 33%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
+#globalnavi .mainlinks .last {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+#globalnavi a { text-align: center; }
+#globalnavi .mainlinks .about a {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+#globalnavi .mainlinks .programs a {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+}
+
+@media only screen and (max-width: 520px) {
+.home #globalnavi .sec-top { display: none; }
+.home #globalnavi .mainlinks { display: block; float: none; margin: 8px 0 0; }
+.home #globalnavi .mainlinks li { width: 49.7%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
+.home #globalnavi .mainlinks .last, .home #globalnavi .mainlinks .programs a {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.home #globalnavi a { text-align: center; }
+.home #globalnavi .mainlinks .admissions a {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+#globalnavi .sec-top { display: none; }
+}
+
+@media only screen and (max-width: 480px) {
+.home #globalnavi .mainlinks { margin: 8px 10px 0; }
+.home #globalnavi { display: block; }
+#globalnavi { display: none; }
+}
+
+@media only screen and (max-width: 360px) {
+#globalnavi .sec-top, .home #globalnavi .mainlinks { margin: 2px 6px 0; }
+.home #globalnavi .mainlinks li { width: 49.5%; }
+}

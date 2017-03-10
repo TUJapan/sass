@@ -1,0 +1,92 @@
+/**************************************************************************
+ * Footer
+ **************************************************************************/
+#globalfooter {
+	background: #423e32 url(/img/noise.png) repeat 0 0;
+	padding: 20px 10px 6px 10px;
+}
+
+/* General Elements in Footer */
+#globalfooter * { color: #fff; }
+#globalfooter a { text-decoration: none; }
+#globalfooter a:hover {
+	color: #cf4e67;
+	text-decoration: underline;
+}
+#globalfooter dl {
+	margin-bottom: 20px;
+	width: 100%;
+	overflow: hidden;
+}
+#globalfooter dt {
+	float: left;
+	font-weight: 600;
+}
+#globalfooter dd { margin: 0 0 0 80px; }
+#globalfooter h1 {
+	font-size: 108%;
+	color: #bcb59f;
+}
+#globalfooter h1 a {
+	color: #bcb59f;
+}
+#globalfooter h1 a:hover {
+	color: #fff;
+}
+#globalfooter h2 {
+	font-size: 100%;
+	color: #bcb59f;
+}
+#globalfooter p { margin-bottom: 20px; }
+
+/* Custom Elements in Footer */
+#globalfooter .link-medium { margin-bottom: 30px; }
+#globalfooter .link-medium li {
+	margin: 0 0 5px 2px;
+	padding: 0 0 0 12px;
+}
+#globalfooter .link-medium .li-spr {
+	width: 7px;
+	height: 8px;
+	background-position: -133px -107px;
+	margin: 4px 0 0 -11px;
+}
+#globalfooter .bm-none { margin-bottom: 0 !important; }
+#globalfooter .bm-10px { margin-bottom: 10px !important; }
+#globalfooter .bm-20px { margin-bottom: 20px !important; }
+
+/* icons for footer links */
+#globalfooter .ico-en {
+	background-position: -133px -150px;
+}
+#globalfooter .ico-ja {
+	background-position: -80px -150px;
+}
+
+/* IE fix -> see ie.css */
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 480px) {
+#globalfooter h1,
+#globalfooter h2 {
+	font-size: 116%;
+}
+
+#globalfooter p,
+#globalfooter dl,
+#globalfooter .link-medium li,
+#globalfooter .link-social li {
+	font-size: 108%;
+}
+
+/* for Japanese text */
+.ja #globalfooter p,
+.ja #globalfooter dl,
+.ja #globalfooter .link-medium li,
+.ja #globalfooter .link-social li {
+	font-size: 116%;
+}
+}

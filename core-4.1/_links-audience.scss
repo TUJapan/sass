@@ -1,0 +1,75 @@
+/**************************************************************************
+ * Audience Link
+ * Used: /index.html, /jp/index.html
+ **************************************************************************/
+
+#main .link-audience {
+	position: relative;
+	float: right;
+	width: 29%;
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+	background: url(/img/bg-top-promo.png) repeat 0 0;
+	z-index: 11;
+}
+#main .link-audience li {
+	border-bottom: 1px dotted #fff;
+	padding: 0;
+	margin: 0;
+}
+#main .link-audience .first { border-top: 1px dotted #fff; }
+#main .link-audience a {
+	display: block;
+	padding: 12px 3%;
+	color: #fff;
+	font-size: 100%;
+	font-family: Georgia,serif;
+	font-weight: 500;
+}
+.ja #main .link-audience a { font-family: sans-serif; }
+#main .link-audience a:hover {
+	text-decoration: none;
+	background: rgba(155,30,52,0.6);
+}
+#main .arr-audience {
+	width: 13px;
+	height: 21px;
+	background-position: -253px -179px;
+	float: right;
+	margin-right: 10px;
+}
+#main .link-audience a:hover .arr-audience { margin-right: 0; }
+
+/* for UG */
+.sec-ug #main .link-audience a {
+	padding: 18px 3%;
+}
+
+
+/***
+ * Media queries
+ ***/
+@media only screen and (max-width: 930px) {
+#main .arr-audience { margin-right: 0; }
+}
+
+@media only screen and (max-width: 890px) {
+#main .arr-audience { display: none; }
+}
+
+@media only screen and (max-width: 800px) {
+#main .link-audience { width: 34%; }
+#main .link-audience a {
+	font-size: 93%;
+	padding: 8px 3%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+#main .link-audience { float: none; width: auto; }
+#main .link-audience a {
+	padding: 8px 3%;
+}
+#main .arr-audience { display: block; margin-right: 0; }
+}

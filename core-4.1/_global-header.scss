@@ -1,0 +1,354 @@
+/**************************************************************************
+ * Global Header - includes Toolbar, Section Head and Action Navigation
+ **************************************************************************/
+#globalheader { background: #fff; border-bottom: 1px solid #bcb59f; }
+.home #globalheader { margin-bottom: 0; }
+
+
+/***
+ * Toolbar
+ ***/
+#tbar { margin-bottom: 8px; }
+#tbar .content {
+  height: 28px;
+	background: #4a4538;
+	background: -moz-linear-gradient(#4f4a3c, #433e32);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#4f4a3c) to(#433e32));
+	background: -webkit-linear-gradient(#4f4a3c, #433e32);
+	background: -o-linear-gradient(#4f4a3c, #433e32);
+	background: -ms-linear-gradient(#4f4a3c, #433e32);
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	box-shadow: 0 1px 3px #999;
+	overflow: visible; }
+#tbar a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 10px 6px;
+	outline: none;
+	height: 15px; }
+#tbar a:hover { color: #cf4e67; }
+
+.tbar-left { float: left; }
+.tbar-left li { border-right: 1px solid #38342a; font-size: 93%; }
+#tbar .tbar-left a.utop {
+	display: block;
+	overflow: hidden;
+	width: 31px;
+	height: 28px;
+	text-indent: -999px;
+	background: url(/img/sprite.png) no-repeat -123px -179px;
+	padding: 0; }
+#tbar .tbar-left a.utop:hover { background-position: -154px -179px; }
+
+.tbar-right { float: right; margin: 0; }
+.tbar-right li {
+	color: #fff;
+	font-size: 93%;
+	line-height: 100%;
+	display: inline-block;
+	border-left: 1px solid #38342a;
+}
+
+#ibutton {
+	width: 33px;
+	height: 28px;
+	background: url(/img/sprite.png) no-repeat -185px -176px; }
+#ibutton a:hover { background: url(/img/sprite.png) no-repeat -219px -176px; }
+#ibutton ul a:hover { background: none; }
+
+#ibutton, #ubutton { position: relative; z-index: 101; }
+#imenu, #umenu { list-style: none; z-index: 100; }
+.tbar-right ul, .tbar-left ul { display: none; }
+.tbar-right ul, .tbar-left ul { position: absolute; }
+
+#imenu, #umenu {
+	background: #433e32;
+	border-top: 1px solid #38342a;
+	border-left: 1px solid #38342a;
+	border-right: 1px solid #38342a;
+	-moz-box-shadow: 0 0 3px #666;
+	-webkit-box-shadow: 0 0 3px #666;
+	box-shadow: 0 0 3px #666; }
+#imenu li, #umenu li {
+	display: block;
+	font-size: 100%;
+	border-bottom: 1px solid #38342a;
+	border-left: none; }
+
+#imenu { width: 180px; right: 0; }
+#imenu a, #umenu a { padding: 6px 8px; }
+
+#umenu { width: 180px; }
+
+.tbar-right .hover, .tbar-left .hover { display: block; }
+
+/* For JP page */
+.ja #tbar a { padding: 8px 10px 5px; height: 14px; }
+.ja #ibutton { height: 27px; }
+.ja #imenu li, .ja #umenu li { font-size: 107.5269%; }
+
+/* IE fix -> see ie.css  */
+
+
+/***
+ * Section Head and Action Navigation
+ ***/
+#sechead {
+	overflow: hidden;
+	width: auto;
+}
+
+#sechead .tuj-logo {
+	overflow: hidden;
+	text-indent: -999px;
+	float: left;
+	background-position: 0 0;
+	width: 285px;
+	height: 65px;
+	margin: 8px 0 16px 4px;
+}
+#actionnavi {
+	float: right;
+	margin: 0 10px 12px;
+	width: 272px;
+}
+
+/* Search Box */
+#searchbox {
+	float: left;
+	outline: none;
+	width: 250px;
+	margin: 0 0 10px 8px;
+	-moz-box-shadow: inset 0 0 4px #ddd;
+	-webkit-box-shadow: inset 0 0 4px #ddd;
+	box-shadow: inset 0 0 4px #ddd;
+	border: 1px solid #bbb;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 5px 6px;
+	color: #aaa;
+	font-size: 108%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#searchbox:focus {
+	color: #666;
+	border: 1px solid #666;
+}
+#searchbutton {
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin: 5px 0 0 -24px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(/img/sprite.png) no-repeat -268px -136px;
+	border: none;
+}
+#searchbutton:hover { background-position: -268px -153px; }
+
+/* Action Buttons */
+#actionnavi li {
+	float: left;
+	margin: 0 0 0 8px;
+}
+#actionnavi a {
+	display: block;
+	width: 110px;
+	padding: 5px 9px 5px 7px;
+	background: #efefef;
+	background: -moz-linear-gradient(#fff, #efefef);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff) to(#efefef));
+	background: -webkit-linear-gradient(#fff, #efefef);
+	background: -o-linear-gradient(#fff, #efefef);
+	background: -ms-linear-gradient(#fff, #efefef);
+	background: linear-gradient(#fff, #efefef);
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	font-size: 100%;
+	border: 1px solid #999;
+	-moz-box-shadow: 0 0 3px #ccc;
+	-webkit-box-shadow: 0 0 3px #ccc;
+	box-shadow: 0 0 3px #ccc;
+}
+#actionnavi a:hover {
+	background: #67091b;
+	background: -moz-linear-gradient(#67091b, #400510);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#67091b) to(#400510));
+	background: -webkit-linear-gradient(#67091b, #400510);
+	background: -o-linear-gradient(#67091b, #400510);
+	background: -ms-linear-gradient(#67091b, #400510);
+	background: linear-gradient(#67091b, #400510);
+	border: 1px solid #000;
+	color: #fff;
+}
+#actionnavi .arr-action {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-position: -154px -107px;
+	position: relative;
+	margin: 0 4px 0 0; }
+#actionnavi a:hover .arr-action,
+.p-request-info #actionnavi .brochure .arr-action,
+.p-info-sessions #actionnavi .session .arr-action { background-position: -164px -107px; }
+
+.p-request-info #actionnavi .brochure a,
+.p-info-sessions #actionnavi .session a {
+	color: #fff;
+	background: #67091b;
+	-moz-box-shadow: inset 0 0 8px #000;
+	-webkit-box-shadow: inset 0 0 8px #000;
+	box-shadow: inset 0 0 8px #000;
+	border: 1px solid #000;
+}
+
+/* for JP page */
+.ja #actionnavi .brochure a { width: 78px; }
+.ja #actionnavi .session a { width: 140px; }
+
+/* IE fix -> see ie.css */
+
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+#sechead .tuj-logo {
+	background-position: 0 -65px;
+	width: 221px;
+	height: 40px;
+	margin: 14px 0 20px 8px;
+}
+#actionnavi {
+	float: right;
+	margin: 0 10px 12px;
+	width: 252px;
+}
+#searchbox {
+	width: 230px;
+	margin-bottom: 8px;
+}
+#actionnavi a {
+	width: 104px;
+	padding: 5px 7px 5px 5px;
+	font-size: 93%;
+}
+
+/* for JP page */
+.ja #actionnavi .brochure a { width: 73px; }
+.ja #actionnavi .session a { width: 135px; }
+}
+
+@media only screen and (max-width: 540px) {
+.home #actionnavi { display: block; }
+#actionnavi { display: none; }
+#actionnavi {
+	float: none;
+	margin: 0 0 12px;
+	width: auto;
+	text-align: center;
+}
+#searchbox {
+	width: 93.3%;
+	margin: 0 0 12px 8px;
+}
+#actionnavi ul {
+	width: auto;
+}
+#actionnavi li {
+	width: 47.3%;
+	margin: 0 0 10px 8px;
+}
+#actionnavi a {
+	width: auto;
+	padding: 6px 8px 6px 6px;
+	font-size: 108%;
+}
+
+/* for JP page */
+.ja #actionnavi a {	font-size: 100%; }
+
+.ja #actionnavi .brochure a { width: auto; }
+.ja #actionnavi .session a { width: auto; }
+}
+
+@media only screen and (max-width: 480px) {
+/***
+ * Toolbar
+ ***/
+#tbar .content {
+	height: 43px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+#tbar a,
+.ja #tbar a {
+	padding: 13px 10px 10px;
+	height: 19px;
+}
+
+.tbar-left li, .tbar-right li {
+	font-size: 108%;
+}
+
+#tbar .tbar-left a.utop,
+.ja #tbar .tbar-left a.utop {
+	width: 57px;
+	height: 19px;
+	padding: 13px 0 11px;
+	text-indent: 0;
+	background: url(/img/sprite.png) no-repeat 0 -222px;
+}
+#tbar .tbar-left a.utop:hover,
+.ja #tbar .tbar-left a.utop:hover {
+	background: url(/img/sprite.png) no-repeat 0 -222px;
+}
+
+#ibutton,
+.ja #ibutton {
+	height: 42px;
+	background: url(/img/sprite.png) no-repeat -185px -169px;
+}
+#ibutton a:hover { background: url(/img/sprite.png) no-repeat -185px -169px; }
+
+/***
+ * Section Head and Action Navigation
+ ***/
+#globalheader { padding: 0; }
+
+#sechead .tuj-logo {
+	margin: 12px 0 18px 14px;
+}
+}
+
+
+/***
+ * For High Res Display
+ ***/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), 
+only screen and (min-device-pixel-ratio: 2) and (max-width: 480px) {
+#tbar .tbar-left a.utop,
+.ja #tbar .tbar-left a.utop,
+#tbar .tbar-left a.utop:hover,
+.ja #tbar .tbar-left a.utop:hover,
+#ibutton,
+.ja #ibutton,
+#ibutton a:hover {
+	background-image: url(/img/sprite2x.png);
+	background-size: 285px 300px;
+}
+}
+
+
+@media only screen and (max-width: 360px) {
+#tbar .tb-lang { display: none; }
+
+#searchbox { width: 91%; margin-bottom: 8px; }
+#actionnavi li { width: 46.4%; }
+}

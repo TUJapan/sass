@@ -1,0 +1,67 @@
+/***
+ * Base font settings
+ ***/
+body { font: 13px/1.231 arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; *font-size: small; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* for English */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 123.1%;
+	margin-bottom: 8px;
+	color: #3e4767; }
+h4, h5, h6 { color: #6c6345; }
+h1 { font-size: 182%; }
+h2 { font-size: 167%; }
+h3 { font-size: 131%; }
+h4 { font-size: 116%; }
+h5, h6 { font-size: 108%; }
+
+/* for Japanese text */
+.ja p, .ja ul, .ja ol, .ja dl, .ja blockquote, .ja del, .ja ins, .ja table { font-size: 93%; line-height: 138.5%; }
+
+.ja h1, .ja h2, .ja h3, .ja h4, .ja h5, .ja h6 { line-height: 138.5%; margin-bottom: 10px; }
+.ja h1 { font-size: 153.9%; }
+.ja h2 { font-size: 138.5%; }
+.ja h3 { font-size: 123.1%; }
+.ja h4 { font-size: 116%; }
+.ja h5, .ja h6 { font-size: 108%; }
+
+/* MQ for headings */
+@media only screen and (max-width: 600px) {
+h1 { font-size: 153.9%; }
+h2 { font-size: 146.5%; }
+h3 { font-size: 138.5%; }
+h4 { font-size: 131%; }
+h5, h6 { font-size: 123.1%; }
+}
+
+/* English text on JP pages */
+.ja *[lang="en"], .ja #main *[lang="en"] { font-size: 108%; }
+
+/* custom font sizes */
+#main .f10, .ja #main .f10 { font-size: 77%; line-height: 150%; }
+#main .f11, .ja #main .f11 { font-size: 85%; line-height: 150%; }
+#main .f12, .ja #main .f12 { font-size: 93%; line-height: 150%; }
+#main .f13, .ja #main .f13 { font-size: 100%; line-height: 150%; }
+#main .f14, .ja #main .f14 { font-size: 108%; line-height: 150%; }
+#main .f15, .ja #main .f15 { font-size: 116%; line-height: 150%; }
+#main .f16, .ja #main .f16 { font-size: 123.1%; line-height: 150%; }
+#main .f17, .ja #main .f17 { font-size: 131%; line-height: 150%; }
+#main .f18, .ja #main .f18 { font-size: 138.5%; line-height: 150%; }
+#main .f19, .ja #main .f19 { font-size: 146.5%; line-height: 150%; }
+#main .f20, .ja #main .f20 { font-size: 153.9%; line-height: 150%; }
+#main .f21, .ja #main .f21 { font-size: 161.6%; line-height: 150%; }
+#main .f22, .ja #main .f22 { font-size: 167%; line-height: 150%; }
+#main .f23, .ja #main .f23 { font-size: 174%; line-height: 150%; }
+#main .f24, .ja #main .f24 { font-size: 182%; line-height: 150%; }
+#main .f25, .ja #main .f25 { font-size: 189%; line-height: 150%; }
+#main .f26, .ja #main .f26 { font-size: 197%; line-height: 150%; }
+
+/* optional line height */
+.lh-50pc { line-height: 50% }
+.lh-100pc { line-height: 100% }
+.lh-110pc { line-height: 110%; }
+.lh-120pc { line-height: 120%; }
+.lh-130pc { line-height: 130%; }
+.lh-200pc { line-height: 200%; }
