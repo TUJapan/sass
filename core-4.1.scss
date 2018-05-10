@@ -30,7 +30,8 @@ $tuj-temple-red: #9e1b34;
 	"core-4.1/share",
 	"core-4.1/breadcrumbs",
 	"core-4.1/global-footer",
-	"core-4.1/print";
+	"core-4.1/print",
+  "core-4.1/cookieconsent";
 
 
 /**************************************************************************
@@ -101,7 +102,7 @@ $tuj-temple-red: #9e1b34;
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 #tbar .tbar-left a.utop,
 #ibutton,

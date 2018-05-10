@@ -1,7 +1,6 @@
 /**
  * Core styles for www.tuj.ac.jp / Temple University, Japan Campus / ver. 4.0.
  * Based on HTML5 ✰ Boilerplate 1.0 (downloaded on 2011/4/11) - html5boilerplate.com/
- * Last updated by: Ryo Watanabe (RW)
  */
 
 /*=========================================================================
@@ -51,6 +50,7 @@
  *     e. Smartphone (Landscape): 480px
  *     f. Smartphone (Portrait): 360px
  * 16. Print Styles
+ * 17. Imports
  *
  **************************************************************************/
 
@@ -1110,7 +1110,7 @@ body.sec-tesol #main .h-sm-dark { background: #073b00; }
 }
 
 /* smaller text in links */
-#main .link-text-small { font-size: 85%; } 
+#main .link-text-small { font-size: 85%; }
 
 /* button */
 #main a.btn-green {
@@ -1153,7 +1153,7 @@ body.sec-tesol #main .h-sm-dark { background: #073b00; }
 		#cf2d4e 0%,
 		#5c1221);
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(#cf2d4e),
 		to(#5c1221));
 	border-radius: 10px;
@@ -1929,7 +1929,7 @@ button.goback {
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 #tbar .tbar-left a.utop,
 #ibutton,
@@ -2298,7 +2298,7 @@ h5, h6 { font-size: 123.1%; }
 .home #globalnavi .mainlinks { display: block; float: none; margin: 8px 0 0; }
 .home #globalnavi .mainlinks li { width: 49.7%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
 
-/* -- Emergency update on 2017/11/22 -- 
+/* -- Emergency update on 2017/11/22 --
 .home #globalnavi .mainlinks li.events { width: 99.5%; }
  -- End -- */
 
@@ -2512,7 +2512,7 @@ h5, h6 { font-size: 123.1%; }
 /***
  * For High Res Display
  ***/
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px),
 only screen and (min-device-pixel-ratio: 2) and (max-width: 480px) {
 #tbar .tbar-left a.utop,
 .ja #tbar .tbar-left a.utop,
@@ -2630,10 +2630,17 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 480px) {
 @media print {
 	/* Hide from print view */
 	.print-hidden, #tbar, #actionnavi, #globalnavi, .secnavi-hr, .secnavi-vert, .share-content, #bcnavi, #globalfooter ul { display: none; }
-	
+
 	/* Adjust for print view */
 	#top, #main, #globalfooter { background: none; }
 	#globalheader { border: none; }
 	.grid { float: none; margin: 0; width: auto; }
 	#globalfooter * { color: #000 !important; }
 }
+
+
+/**************************************************************************
+ * @import
+ **************************************************************************/
+
+@import "core-4.1/cookieconsent";

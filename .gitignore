@@ -13,3 +13,6 @@ dwsync.xml
 .sass_cache/
 node_modules/
 css/
+
+# CodeKit config file
+config.codekit3
