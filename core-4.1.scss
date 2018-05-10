@@ -1,0 +1,180 @@
+/**
+ * Core styles for www.tuj.ac.jp / Temple University, Japan Campus / ver. 4.1.
+ * Based on HTML5 ✰ Boilerplate 1.0 (downloaded on 2011/4/11) - html5boilerplate.com/
+ * Last updated by: Ryo Watanabe (RW)
+ */
+
+/* Color variables */
+$tuj-temple-red: #9e1b34;
+
+/* Componetns */
+@import
+  "core-4.1/reset",
+	"core-4.1/base-styles",
+	"core-4.1/typography",
+	"core-4.1/global-header",
+	"core-4.1/global-navi",
+	"core-4.1/grid",
+	"core-4.1/block-grid",
+	"core-4.1/section-navi",
+	"core-4.1/headings",
+	"core-4.1/box",
+	"core-4.1/links",
+	"core-4.1/links-audience",
+	"core-4.1/lists",
+	"core-4.1/buttons",
+	"core-4.1/icons",
+	"core-4.1/images",
+	"core-4.1/form",
+	"core-4.1/announcements",
+	"core-4.1/share",
+	"core-4.1/breadcrumbs",
+	"core-4.1/global-footer",
+	"core-4.1/print";
+
+
+/**************************************************************************
+ * Main Block;
+ **************************************************************************/
+#main {
+	min-height: 350px;
+	padding-top: 20px;
+}
+.home #main { padding-top: 16px; }
+
+@media only screen and (max-width: 360px) {
+#main { padding: 20px 6px 0; }
+}
+
+
+/**************************************************************************
+ * Page Specific Styles
+ **************************************************************************/
+
+/* news page */
+#main .news-title { margin-bottom: 12px; }
+#main .news-subhead {
+	font-size: 108%;
+	margin-bottom: 12px;
+}
+#main .news-date {
+	font-size: 93%;
+	font-weight: normal;
+}
+#main .news-media-link {
+	font-size: 108%;
+	font-weight: normal;
+	margin-bottom: 4px;
+	color: #6c6345;
+}
+
+/* job listing page */
+#main .job-req-section {
+	border-bottom: 1px solid #bcb59f;
+	margin-bottom: 20px;
+}
+
+/* IE fix -> see ie.css */
+
+
+/**************************************************************************
+ * Non-semantic Helper Classes
+ **************************************************************************/
+ /* For Mobile Only Content */
+.mob-only { display: none !important; }
+.mob-only-inline { display: none !important; }
+.only-360, .only-540 { display: none !important; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
+
+/**************************************************************************
+ * Media queries for responsive design.
+ * These follow after primary styles so they will successfully override.
+ **************************************************************************/
+
+/**************************************************************************
+ * For High Res Display
+**************************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+#tbar .tbar-left a.utop,
+#ibutton,
+#ibutton a:hover,
+#searchbutton,
+.link-large .li-spr,
+.link-large-red .li-spr,
+.link-medium .li-spr,
+.link-small .li-spr,
+.link-rel .li-spr,
+.prev .li-spr,
+.next .li-spr,
+.link-social .li-spr,
+.link-voice .li-spr,
+.spr,
+#bcnavi h1 {
+	background-image: url(/img/sprite2x.png);
+	background-size: 285px 300px;
+}
+}
+
+
+/**************************************************************************
+ * Media Queries
+**************************************************************************/
+@media only screen and (max-width: 800px) {
+.no-800 { display: none; }
+}
+
+@media only screen and (max-width: 700px) {
+#main .bp700-clear-left {
+	clear: left;
+}
+
+.no-700 { display: none; }
+}
+
+@media only screen and (max-width: 600px) {
+/* preserve text size for iPhone landscape */
+html { -webkit-text-size-adjust: none; }
+
+/* for search results section */
+#cse {
+	margin-bottom: 40px;
+}
+
+/* display for mobile phone view*/
+.mob-only { display: block !important; }
+.mob-only-inline { display: inline !important; }
+.no-600 { display: none !important; }
+}
+
+@media only screen and (max-width: 540px) {
+.only-540 { display: block !important; }
+}
+
+@media only screen and (max-width: 520px) {
+/* hide from mobile phone view*/
+.mob-no { display: none; }
+.no-520 { display: none; }
+}
+
+@media only screen and (max-width: 480px) {
+
+/***
+ * Custom Individual Page Elements
+ ***/
+/* Top page */
+#slideshow { float: none; padding: 0; margin: 0; }
+
+.no-480 { display: none; }
+}
+
+@media only screen and (max-width: 360px) {
+.only-360 { display: block !important; }
+}

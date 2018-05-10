@@ -73,7 +73,7 @@ html.ie6, html.ie7, html.ie8 { overflow: hidden; }
 }
 
 /* with bottom margin */
-#address1, #address2, #custentity_school_name, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted, #custentity_stu_webhowheard_mba, #custentity_stu_webhowheard_j_mba, #custentity_stu_occupation, #custentity_stu_webhowheard, #custentity_stu_webhowheard_tesol, #custentity_stu_edubackgrd, #custentity_stu_currentvisastatus, #custentityemergancycontactmethod, #custentity_stu_ssn, #custentity_stu_webhowheard_j_cep, #custentity_stu_webhowheard_cep, #custentity373, #custentity_stu_toeflscore_fs, #custentity_stu_toeic_score_fs, #custentity_stu_ieltsscore_fs {
+#address1, #address2, #custentity_school_name, #custentity_stu_webhowheard_conted, #custentity_stu_webhowheard_j_conted, #custentity_stu_webhowheard_mba, #custentity_stu_webhowheard_j_mba, #custentity_stu_occupation, #custentity_stu_webhowheard, #custentity_stu_webhowheard_tesol, #custentity_stu_edubackgrd, #custentity_stu_currentvisastatus, #custentityemergancycontactmethod, #custentity_stu_ssn, #custentity_stu_webhowheard_j_cep, #custentity_stu_webhowheard_cep, #custentity373 {
 	margin-bottom: 5px;
 }
 
@@ -88,6 +88,11 @@ html.ie6, html.ie7, html.ie8 { overflow: hidden; }
  * Hiding Specific field
 **************************************************************************/
 .form65-dayinmba { display: none; }
+/*.aep-aep-high-douji-toefl { display: none; }
+.aep-academic-purpose-douji-toefl { display: none; }
+.aep-college-prep-douji-toefl { display: none; }
+.aep-grad-prep-douji-toefl { display: none; }*/
+.aep-test-writing-douji-toefl { display: none; }
 
 /**************************************************************************
  * Media Queries

@@ -56,14 +56,6 @@
 /***
  * Media queries
  ***/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
-only screen and (min-device-pixel-ratio: 2) {
-#bcnavi h1 {
-	background-image: url(/img/sprite2x.png);
-	background-size: 285px 300px;
-}
-}
-
 @media only screen and (max-width: 800px) {
 #bcnavi h1 {
 	width: 100%;

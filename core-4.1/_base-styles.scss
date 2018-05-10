@@ -176,7 +176,6 @@ body { color: #6c6345; }
 }
 #main li { margin-bottom: 10px; }
 #main ol.upper-alpha { list-style-type: upper-alpha; }
-#main ol.lower-alpha { list-style-type: lower-alpha; }
 #main p {
 	width: auto;
 	overflow: hidden;
@@ -311,9 +310,6 @@ body { color: #6c6345; }
 #main .tp-20px { margin-top: 20px !important; }
 #main .tp-10px { margin-top: 10px !important; }
 #main .tp-none { margin-top: 0 !important; }
-
-/* optional text alignment */
-#main .text-center { text-align: center !important; }
 
 
 /**************************************************************************

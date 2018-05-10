@@ -14,12 +14,10 @@
 #main .program-links h2 { width: 100%; margin: 0 3px 3px 0; }
 #main .program-links li { padding: 0 0 3px 15px; }
 }
-@media screen and (max-width: 680px) {
-#main .program-links { margin: 0 0 60px 0; }
-}
 @media screen and (max-width: 480px) {
 .program-links .li-spr { margin: 6px 0 0 -13px; }
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-device-pixel-ratio: 2) {
 .program-links .li-spr { background-image: url(/img/sprite2x.png); background-size: 285px 300px; }
@@ -42,7 +40,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	margin-bottom: 12px;
 }
 #main .block-grid h3 {
-	font-size: 131%;
+	font-size: 160%;
 	line-height: 133%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 100;
@@ -63,11 +61,11 @@ only screen and (min-device-pixel-ratio: 2) {
 #main .block-grid-3 li {
 	width: 48%;
 }
-#main .block-grid-3 li:nth-child(3n+1) {
-	clear: none;
-}
 #main .block-grid-3 li:nth-child(2n+1) {
 	clear: both;
+}
+#main .block-grid-3 li:nth-child(3n+1) {
+	clear: none;
 }
 }
 @media only screen and (max-width: 600px){
@@ -80,11 +78,11 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 @media only screen and (max-width: 440px){
 #main .block-grid h3 {
-	font-size: 131%;
+	font-size: 130%;
 }
 }
 @media only screen and (max-width: 360px){
 #main .block-grid h3 {
-	font-size: 116%;
+	font-size: 120%;
 }
 }

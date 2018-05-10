@@ -6,9 +6,8 @@
 	.print-hidden, #tbar, #actionnavi, #globalnavi, .secnavi-hr, .secnavi-vert, .share-content, #bcnavi, #globalfooter ul { display: none; }
 	
 	/* Adjust for print view */
-	html, #top, #main, #globalfooter { background: none; }
+	#top, #main, #globalfooter { background: none; }
 	#globalheader { border: none; }
 	.grid { float: none; margin: 0; width: auto; }
-	.push-9, .pull-9, .push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4, .push-3, .pull-3 { left: auto; right: auto; }
 	#globalfooter * { color: #000 !important; }
 }
