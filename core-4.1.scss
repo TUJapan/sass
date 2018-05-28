@@ -84,7 +84,7 @@ $tuj-temple-red: #9e1b34;
  /* For Mobile Only Content */
 .mob-only { display: none !important; }
 .mob-only-inline { display: none !important; }
-.only-360, .only-540 { display: none !important; }
+.only-360, .only-540, .only-700 { display: none !important; }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
@@ -138,7 +138,11 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 .no-700 { display: none; }
+
+.only-700{ display:block !important }
 }
+
+
 
 @media only screen and (max-width: 600px) {
 /* preserve text size for iPhone landscape */
