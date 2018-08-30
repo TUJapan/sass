@@ -17,3 +17,13 @@ Component library for Core 4.0 can be found at the following URL:
 
 - https://www.tuj.ac.jp/style-guide/
 - https://www.tuj.ac.jp/jp/style-guide/
+
+## How Styles Are Organized
+### Core
+Core has the styles for all basic elements used on the TUJ website. Core 4.0 is used for all sections except the undergraduate section. Core 4.1 is used for UG section only.
+
+### Section Specific Styles
+Section specific styles, such as UG only styles, are written in section specific styles sheet, such as ug.scss.  If there are multiple pages that use the same style in a particular section, add them to the section specific style sheet.
+
+### Page Specific Styles
+If the styles are only used on a particular page, put it on the document itself.  It might be best to use SSI to include the css instead of loading an external CSS for this.
