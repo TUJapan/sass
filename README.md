@@ -27,3 +27,8 @@ Section specific styles, such as UG only styles, are written in section specific
 
 ### Page Specific Styles
 If the styles are only used on a particular page, put it on the document itself.  It might be best to use SSI to include the css instead of loading an external CSS for this.
+
+## Grid System
+See sample grid below:
+
+- https://www.tuj.ac.jp/style-guide/grid.html
