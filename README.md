@@ -11,3 +11,9 @@ When updating the Sass files, work on the Sass files from this repo.
 2. Update .scss and generate .css.
 3. Upload only .css files to the TEST/LIVE sites.
 4. git push when you are done.
+
+## Component Library
+Component library for Core 4.0 can be found at the following URL:
+
+- https://www.tuj.ac.jp/style-guide/
+- https://www.tuj.ac.jp/jp/style-guide/
