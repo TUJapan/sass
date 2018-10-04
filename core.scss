@@ -518,11 +518,27 @@ h5, h6 { font-size: 108%; }
 .grid-12 { width: 100%; float: none; }
 
 /* Push and pull setup */
-.push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4 {
+.push-10, .pull-10, .push-9, .pull-9, .push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4, .push-3, .pull-3, .push-2, .pull-2 {
 	position: relative;
 	margin: 0;
 }
 
+.push-10 {
+	left: 86%;
+	right: auto;
+}
+.pull-10 {
+	left: auto;
+	right: 82.8%;
+}
+.push-9 {
+	left: 77.4%;
+	right: auto;
+}
+.pull-9 {
+	left: auto;
+	right: 74.2%;
+}
 .push-8 {
 	left: 68.8%;
 	right: auto;
@@ -532,7 +548,7 @@ h5, h6 { font-size: 108%; }
 	right: 65.6%;
 }
 .push-7 {
-	left: 60.3%;
+	left: 60.2%;
 	right: auto;
 }
 .pull-7 {
@@ -562,6 +578,22 @@ h5, h6 { font-size: 108%; }
 .pull-4 {
 	left: auto;
 	right: 31.2%;
+}
+.push-3 {
+	left: 25.8%;
+	right: auto;
+}
+.pull-3 {
+	left: auto;
+	right: 22.6%;
+}
+.push-2 {
+	left: 17.2%;
+	right: auto;
+}
+.pull-2 {
+	left: auto;
+	right: 14%;
 }
 
 .block-divider { border-bottom: 1px solid #bcb59f; margin-bottom: 30px !important; }
@@ -2086,7 +2118,7 @@ html { -webkit-text-size-adjust: none; }
 .mob-grid-4 { width: 31.2% !important; }
 
 /* [Experimenal] Push and pull setup */
-.push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4 {
+.push-10, .pull-10, .push-9, .pull-9, .push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4, .push-3, .pull-3, .push-2, .pull-2 {
 	left: auto;
 	right: auto;
 }
