@@ -1356,6 +1356,14 @@ body.sec-tesol #main .h-sm-dark { background: #073b00; }
 	background: #fff;
 }
 
+/* thumbnail images on Events section (widh specified to allow 2x) */
+.sec-events #main img {
+  max-width:103px;
+  @media only screen and (max-width: 600px){
+    max-width:172px;
+  }
+}
+
 
 /***
  * Emphasized Ordered List
