@@ -2,7 +2,7 @@
  * Styles for Wufoo.com form pages / Temple University, Japan Campus / ver. 4.0.
  * Last updated by: Ryo Watanabe (RW)
  */
- 
+
 html {
 	background: #fffdf4 url(/img/noise.png) repeat 0 0;
 }
@@ -44,10 +44,10 @@ form {
 .wufoo .h-sm-light h3,
 .wufoo .h-sm-light legend {
 	background: #ede9db;
-	color: #6a6863;
+	color: #6a6863 !important;
 	padding: 6px;
 	margin-bottom: 10px;
-	font-size: 108%;
+	font-size: 108% !important;
 	font-family: Arial, Helvetica, sans-serif;
 	border-top: none;
 }
