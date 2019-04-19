@@ -1,29 +1,6 @@
 # Sass files for TUJ website
 It includes Core 4.0 and Core 4.1 files, as well as section specific files. Core 4.0 (core.scss) is used on all the pages except the UG section. Core 4.1 (core-4.1.scss) is used for the UG section.
 
-## Which stylesheets are loaded
-Depending on the section of the website, different set of stylesheets are loaded. Core 4.0/4.1 has the basic styles and section specific stylesheets such as `ug.scss` and `news.scss` have section specific styles.
-
-### Main section
-```html
-<link rel="stylesheet" href="/css/core.css?v=201902181557" />
-```
-
-### UG section
-```html
-<link rel="stylesheet" href="/css/core-4.1.css" />
-<link rel="stylesheet" href="/css/ug.css" />
-```
-
-### TESOL section
-```html
-<link rel="stylesheet" href="/css/core.css?v=201902181557" />
-<link rel="stylesheet" href="/css/tesol.css" />
-```
-
-### Page specific styles
-Page specific styles are directly placed on each page in the &gt;head&lt; section of the HTML.
-
 ## Updating and maintaining the Sass files
 When updating the Sass files, work on the Sass files from this repo.
 
@@ -47,6 +24,23 @@ Core has the styles for all basic elements used on the TUJ website. Core 4.0 is 
 
 ### Section Specific Styles
 Section specific styles, such as UG only styles, are written in section specific styles sheet, such as ug.scss.  If there are multiple pages that use the same style in a particular section, add them to the section specific style sheet.
+
+#### Main section
+```html
+<link rel="stylesheet" href="/css/core.css?v=201902181557" />
+```
+
+#### UG section
+```html
+<link rel="stylesheet" href="/css/core-4.1.css" />
+<link rel="stylesheet" href="/css/ug.css" />
+```
+
+#### TESOL section
+```html
+<link rel="stylesheet" href="/css/core.css?v=201902181557" />
+<link rel="stylesheet" href="/css/tesol.css" />
+```
 
 ### Page Specific Styles
 If the styles are only used on a particular page, put it on the document itself.  It might be best to use SSI to include the css instead of loading an external CSS for this.
