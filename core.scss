@@ -2122,8 +2122,11 @@ html { -webkit-text-size-adjust: none; }
 	overflow: hidden !important;
 }
 .mob-first { margin: 0 !important; }
+.mob-grid-9 { width: 74.2% !important; }
+.mob-grid-8 { width: 65.6% !important; }
 .mob-grid-6 { width: 48.4% !important; }
 .mob-grid-4 { width: 31.2% !important; }
+.mob-grid-3 { width: 22.6% !important; }
 
 /* [Experimenal] Push and pull setup */
 .push-10, .pull-10, .push-9, .pull-9, .push-8, .pull-8, .push-7, .pull-7, .push-6, .pull-6, .push-5, .pull-5, .push-4, .pull-4, .push-3, .pull-3, .push-2, .pull-2 {
