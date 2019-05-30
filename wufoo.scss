@@ -30,11 +30,10 @@ form {
 	padding: 2px 2px 9px;
 	margin: 24px 0 14px;
 	font-family: Georgia,serif;
-	font-size: 18px;
+	font-size: 18px !important;
 	font-weight: 600;
-	color: #6c6345;
 	background: url(/img/bg-h-md-dark.gif) no-repeat left bottom;
-	color: #313953;
+	color: #313953 !important;
 	border-top: none;
 }
 .wufoo .h-md-dark-first h3 {
@@ -72,15 +71,15 @@ form ul { padding: 20px; border: 3px solid #EAE4CE; background: #fff; }
 	border-top: none;
 	padding: 10px;
 	font-family: Georgia,serif;
-	font-size: 16px;
+	font-size: 16px !important;
 	font-weight: 600;
-	color: #3E4767;
+	color: #3E4767 !important;
 }
 .wufoo .disclaimer div {
 	padding: 0 10px;
-	font-size: 12px;
+	font-size: 12px !important;
 	line-height: 150%;
-	color: #6C6345;
+	color: #6C6345 !important;
 }
 .wufoo .disclaimer div a {
 	text-decoration: none;
