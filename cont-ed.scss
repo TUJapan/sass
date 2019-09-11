@@ -223,6 +223,13 @@
 #main .bboard h3 a { color: #ff9; text-decoration: underline; }
 #main .bboard h3 a:hover { color: #fff; }
 
+@media only screen and (max-width: 600px) {
+	.schedules {
+		display: block;
+		overflow-x: auto;
+	}
+}
+
 .schedules th, .calendar th { font-weight: normal; }
 .schedules td, .calendar td { text-align: center; }
 .schedules th.tct, .schedules td.tct, .calendar td.cal-dates { text-align: left; }
@@ -635,10 +642,6 @@ screen and (min-device-pixel-ratio: 2) {
 #main dl.cd-fees dt { float: none; }
 #main dl.cd-fees dd	{ margin: 0 0 14px 0; }
 }
-@media screen and (max-width: 780px) {
-/* Hide schedule table columns */
-.tfe, .schedules .ebird, .schedules .ftuj, .thr { display: none; }
-}
 @media only screen and (max-width: 700px) {
 #main .featured .grid-6 { float: none; margin: 0; width: auto; }
 }
@@ -726,7 +729,6 @@ screen and (min-device-pixel-ratio: 2) {
 
 #main a.btn-su { width: auto; }
 .cdp .secnavi-hr { display: none; }
-.calendar .tsm { display: none; }
 
 /* Recommend display styles */
 #main .recommend dt,
