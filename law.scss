@@ -7,7 +7,7 @@
  * Custom base styles
  ***/
 
-/* header colors */ 
+/* header colors */
 .sec-law h1, .sec-law h2, .sec-law h3, .sec-law h4, .sec-law h5, .sec-law h6 { color: #43200b; }
 
 
@@ -55,9 +55,7 @@
 	display: block;
 	overflow: hidden;
 	text-indent: -999px;
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 8px 0 12px 12px;
 	float: none;
 }
@@ -70,7 +68,7 @@
 	text-indent: -999px;
 	width: 157px;
 	height: 16px;
-	margin: 0 0 13px 54px;
+	margin: 0 0 13px 12px;
 }
 
 #sechead .pn-law:hover {
@@ -178,7 +176,7 @@ h1, h2, h3, h4, h5, h6 { color: #43200b; }
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-device-pixel-ratio: 2) {
 #sechead .pn-law {
 	background-image: url(/law/img/sprite-law2x.png);

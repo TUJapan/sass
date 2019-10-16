@@ -323,10 +323,12 @@ h5, h6 { font-size: 108%; }
 	overflow: hidden;
 	text-indent: -999px;
 	float: left;
+  background-image: url('/img/tuj-logo2x.png');
 	background-position: 0 0;
-	width: 285px;
+  background-size: contain;
+	width: 200px;
 	height: 65px;
-	margin: 8px 0 16px 4px;
+	margin: 0 0 12px 12px !important;
 }
 #actionnavi {
 	float: right;
@@ -2138,9 +2140,7 @@ html { -webkit-text-size-adjust: none; }
  * Section Head and Action Navigation
  ***/
 #sechead .tuj-logo {
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 14px 0 20px 8px;
 }
 #actionnavi {

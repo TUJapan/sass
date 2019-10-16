@@ -7,7 +7,7 @@
  * Custom base styles
  ***/
 
-/* header colors */ 
+/* header colors */
 .sec-cep h1, .sec-cep h2, .sec-cep h3, .sec-cep h4, .sec-cep h5, .sec-cep h6 { color: #000; }
 
 
@@ -53,9 +53,7 @@
 	display: block;
 	overflow: hidden;
 	text-indent: -999px;
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 8px 0 12px 12px;
 	float: none;
 }
@@ -68,7 +66,7 @@
 	text-indent: -999px;
 	width: 144px;
 	height: 16px;
-	margin: 0 0 13px 54px;
+	margin: 0 0 13px 12px;
 }
 .ja #sechead .pn-cep {
 	background-position: 0 -32px;
@@ -220,7 +218,7 @@
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-device-pixel-ratio: 2) {
 #sechead .pn-cep {
 	background-image: url(/cep/img/sprite-cep2x.png);

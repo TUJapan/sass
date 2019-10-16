@@ -107,8 +107,10 @@
 	overflow: hidden;
 	text-indent: -999px;
 	float: left;
+  background-image: url('/img/tuj-logo2x.png');
 	background-position: 0 0;
-	width: 285px;
+  background-size: contain;
+	width: 200px;
 	height: 65px;
 	margin: 8px 0 16px 4px;
 }
@@ -219,9 +221,7 @@
 /* Media queries */
 @media only screen and (max-width: 600px) {
 #sechead .tuj-logo {
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 14px 0 20px 8px;
 }
 #actionnavi {
@@ -331,7 +331,7 @@
 /***
  * For High Res Display
  ***/
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px),
 only screen and (min-device-pixel-ratio: 2) and (max-width: 480px) {
 #tbar .tbar-left a.utop,
 .ja #tbar .tbar-left a.utop,

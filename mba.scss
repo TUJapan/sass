@@ -41,9 +41,7 @@
 	display: block;
 	overflow: hidden;
 	text-indent: -999px;
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 8px 0 12px 12px;
 	float: none;
 }
@@ -55,7 +53,7 @@
 	text-indent: -999px;
 	width: 168px;
 	height: 16px;
-	margin: 0 0 13px 54px;
+	margin: 0 0 13px 12px;
 }
 #sechead .pn-mba:hover {
     background-position: 0 -16px;
@@ -190,7 +188,7 @@
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-device-pixel-ratio: 2) {
 #sechead .pn-mba,
 #main .link-action li a {

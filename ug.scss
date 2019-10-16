@@ -59,9 +59,7 @@ background: #ff6600;
 	display: block;
 	overflow: hidden;
 	text-indent: -999px;
-	background-position: 0 -65px;
 	width: 221px;
-	height: 40px;
 	margin: 0 0 12px 12px;
 	float: none;
 }
@@ -74,7 +72,7 @@ background: #ff6600;
 	text-indent: -999px;
 	width: 173px;
 	height: 16px;
-	margin: 0 0 13px 54px;
+	margin: 0 0 13px 12px;
 }
 .ja #sechead .pn-ug {
 	background-position: 0 -32px;
@@ -221,14 +219,14 @@ th.cell-desc {
 /***
  * Majors Section
  ***/
- 
-/* Header */ 
+
+/* Header */
 .h-major {
 	font-size: 230%;
 	margin: 6px 0 20px;
 }
 
-/* Intro paragraph */ 
+/* Intro paragraph */
 #main .intro-major {
 	font-size: 123.1%;
 	padding-bottom: 30px;
@@ -240,7 +238,7 @@ th.cell-desc {
 	margin-top: 20px;
 }
 
-/* Profile circle photo style */ 
+/* Profile circle photo style */
 .circle-profile {
 	border-radius: 150px;
 }
@@ -490,7 +488,7 @@ th.cell-desc {
 /**************************************************************************
  * For High Res Display
 **************************************************************************/
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-device-pixel-ratio: 2) {
 #sechead .pn-ug,
 .arr-more-no-bg {
