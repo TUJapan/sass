@@ -324,12 +324,19 @@ h5, h6 { font-size: 108%; }
 	text-indent: -999px;
 	float: left;
   background-image: url('/img/tuj-logo2x.png');
-	background-position: 0 0;
+	background-position: 0 0 !important; // remove important on 11-11-2019
   background-size: contain;
 	width: 200px;
-	height: 65px;
-	margin: 0 0 12px 12px !important;
+	height: 65px !important; // remove important on 11-11-2019
+	margin: 8px 0 12px 12px !important; // remove important on 11-11-2019
 }
+
+// remove entire section on 11-11-2019
+#sechead h2 a {
+  margin: 0 0 13px 12px !important;
+}
+// end remove section
+
 #actionnavi {
 	float: right;
 	margin: 0 10px 12px;
