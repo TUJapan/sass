@@ -7,8 +7,8 @@
 /***
  * Early-bird and FTUJ price settings
  ***/
-.ebird { display: none; } /* early-bird [default] color: red; / [off] display: none; */
-.ftuj { color: red; } /* ftuj [default] display: none; / [on] color: red; */
+.ebird { color: red; } /* early-bird [default] color: red; / [off] display: none; */
+.ftuj { display: none; } /* ftuj [default] display: none; / [on] color: red; */
 
 /***
  * Hide early-bird fee for the seminars from previous semester
