@@ -715,7 +715,8 @@ screen and (min-device-pixel-ratio: 2) {
 #actionnavi { display: none; }
 
 /* Schedule */
-.schedules .tsm { display: none; }
+// hide off-season courses
+// .schedules .tsm { display: none; }
 }
 @media only screen and (max-width: 480px) {
 /***
