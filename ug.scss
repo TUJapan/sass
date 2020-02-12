@@ -78,7 +78,7 @@ background: #ff6600;
 	background-position: 0 -32px;
 	height: 14px;
 	width: 83px;
-	margin: 0 0 15px 54px;
+	margin: 0 0 13px 12px;
 }
 
 #sechead .pn-ug:hover {
@@ -622,13 +622,14 @@ screen and (min-device-pixel-ratio: 2) {
 }
 }
 @media only screen and (max-width: 593px) {
-#logo { margin: 8px 0 0; width: 100%; float: none; }
-#actionnavi { display: none; }
+#logo { margin: 8px 0 0; width: auto; float: left; }
+
 }
 @media only screen and (max-width: 540px) {
 #slideshow { display: none; }
 .top-intro { margin-top: 0; }
 #main a.btn-su { width: 88%; }
+#actionnavi { display: block; }
 }
 @media only screen and (max-width: 520px) {
 
@@ -689,7 +690,7 @@ screen and (min-device-pixel-ratio: 2) {
 @media only screen and (max-width: 412px) {
 /* logo */
 #sechead .tuj-logo { margin: 0 0 14px 14px; float: none; }
-#sechead .pn-ug { margin: 5px 0 10px 56px; float: none; }
+#sechead .pn-ug { margin: 5px 0 10px 14px; float: none; }
 }
 @media only screen and (max-width: 412px) {
 .aep-home #globalnavi .mainlinks li { width: 49.5%; }
