@@ -1,14 +1,15 @@
 /**
  * Styles for only Cont-ed section
- * Last updated by: Rebecca Slinn 2020-04-14
+ * Last updated by: Rebecca Slinn 2020-05-01
  */
 
 
 /***
- * Early-bird and FTUJ price settings
+ * Early-bird and FTUJ price settings - can only display 1 at a time
  ***/
 .ebird { display: none; } /* early-bird [default] color: red; / [off] display: none; */
-.ftuj { color: red; } /* ftuj [default] display: none; / [on] color: red; */
+.ftuj { display: none; } /* ftuj [default] display: none; / [on] color: red; */
+.onlinecf { color: red; } /* display for online discount price */
 
 /***
  * Hide early-bird fee for the seminars from previous semester
