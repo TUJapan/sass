@@ -47,7 +47,7 @@
 	margin: 8px 0 12px 12px;
 	float: none;
 }
-#sechead .pn-mim {
+#sechead .pn-mim, .ja #sechead .pn-mim  {
 	display: block;
 	background: url(/mim/img/sprite-mim.png) no-repeat;
 	padding: 0;
@@ -124,6 +124,10 @@
     border-left: 4px solid #57a9c1;
 }
 
+#main #events {
+    background: #b20638;
+    padding: 60px 0 10px;
+}
 
 /**************************************************************************
  * Button
@@ -308,12 +312,44 @@ screen and (min-device-pixel-ratio: 2) {
 }
 }
 
-@media only screen and (max-width:540px) {
-.mim-home #actionnavi {
-    display: block;
+@media only screen and (min-width:540px) {
+  #actionnavi{
+    width: 290px;
+  }
+
+  #actionnavi a{
+    width: 130px !important;
+  }
+
+  .ja .mim-home #actionnavi a, #actionnavi a:hover{
+    width: 140px !important;
+    padding-right: 0px !important;
+  }
+  .ja .mim-home #actionnavi a:hover{
+    width: 140px !important;
+  }
 }
-#main a.btn-su {
-    width: 88%}
+
+
+@media only screen and (max-width:540px) {
+  .mim-home #actionnavi {
+      display: block;
+    }
+  #main a.btn-su {
+      width: 88%
+    }
+  ul#info-session{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #info-session a{
+    text-decoration: underline !important;
+    padding: 10px 5px !important;
+  }
+  #info-session a:hover{
+    border: none !important;
+  }
 }
 
 @media only screen and (max-width:520px) {
