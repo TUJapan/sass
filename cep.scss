@@ -24,6 +24,8 @@
 	color: #fff;
 }
 
+#globalnavi .mainlinks #ce-foreign-g a { background: #ff2b00; }
+
 .cep-home #globalnavi .sec-top a {
 	background: #87856d;
 }
@@ -32,6 +34,8 @@
 .sec-cep-services #globalnavi .ce-services a,
 .sec-cep-programs #globalnavi .ce-programs a,
 .sec-cep-case #globalnavi .ce-case a,
+.sec-cep-leadership #globalnavi .ce-leadership a,
+.sec-cep-foreging #globalnavi #ce-foreign-g a,
 .sec-cep-events #globalnavi .ce-events a {
 	background: #87856d;
 }
@@ -310,6 +314,7 @@ screen and (min-device-pixel-ratio: 2) {
 .cep-home #globalnavi .sec-top { display: none; }
 .cep-home #globalnavi .mainlinks { display: block; float: none; margin: 8px 0 0; }
 .ja.cep-home #globalnavi .mainlinks li { width: 49.7%; border-right: 1px solid #fff; border-top: 1px solid #fff; }
+.ja.cep-home #globalnavi .mainlinks .last-item{ width: 99.5%; }
 .cep-home #globalnavi .mainlinks li { width: 100%; }
 .cep-home #globalnavi .mainlinks .last {
 	-moz-border-radius: 0;
