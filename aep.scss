@@ -1,6 +1,5 @@
 /**
  * Styles for only AEP section
- * Last updated by: Ryo Watanabe (RW)
  */
 
 /***
@@ -197,6 +196,25 @@
 }
 #main a.btn-su { width: 45%; }
 
+/* Custom AEP Announcements */
+#main #aep-announcements {
+border-top: 3px solid #468DF9;
+border-bottom: 3px solid #468DF9;
+}
+#main #aep-announcements h1  {
+background: #256fdc url(/img/noise.png) repeat 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+ #main #aep-announcements {
+border: none;
+}
+
+ #main #aep-announcements h1 {
+border-top: 2px solid #468DF9;
+border-bottom: 2px solid #468DF9;
+}
+}
 
 /**************************************************************************
  * Media queries for responsive design.
