@@ -746,3 +746,22 @@ screen and (min-device-pixel-ratio: 2) {
 #main .recommend dd,
 #main .reminder dd { padding: 0; }
 }
+
+/* Cont Ed Announcement Box */
+#main #cont-ed-announcements {
+  border-top: 3px solid #ffe77c;
+  border-bottom: 3px solid #ffe77c;
+}
+#main #cont-ed-announcements h1  {
+  background: #ffd200 url(/img/noise.png) repeat 0 0;
+  color: #000;
+}
+@media only screen and (max-width: 600px) {
+ #main #cont-ed-announcements {
+  border: none;
+}
+ #main #cont-ed-announcements h1 {
+  border-top: 2px solid #ffe77c;
+  border-bottom: 2px solid #ffe77c;
+}
+}
