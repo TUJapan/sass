@@ -7,14 +7,14 @@
 /***
  * Early-bird and FTUJ price settings - can only display 1 at a time
  ***/
-.ebird { display: none; } /* early-bird [default] color: red; / [off] display: none; */
+.ebird { color: red; } /* early-bird [default] color: red; / [off] display: none; */
 .ftuj { display: none; } /* ftuj [default] display: none; / [on] color: red; */
-.onlinecf { color: red; } /* display for online discount price */
+.onlinecf { display: none; } /* display for online discount price */
 
 /***
  * Hide early-bird fee for the seminars from previous semester
  ***/
-.sem-SP .ebird { color: grey; text-decoration: line-through; }
+.sem-SU .ebird { color: grey; text-decoration: line-through; }
 
 /***
  * Custom base styles
