@@ -259,9 +259,13 @@ screen and (min-device-pixel-ratio: 2) {
 .sec-law #globalnavi .mainlinks .programs a {
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
-	border-radius: 0;
-}
-}
+	border-radius: 0;}
+#main #law-announcements {
+		border: none!important; }
+#main #law-announcements h1 {
+			border-top: 3px solid rgb(134, 14, 3);
+			border-bottom: 3px solid rgb(134, 14, 3);}
+	}
 @media only screen and (max-width: 540px) {
 .law-home #actionnavi { display: block; }
 #main a.btn-su { width: 88%; }
@@ -309,4 +313,12 @@ screen and (min-device-pixel-ratio: 2) {
 }
 @media only screen and (max-width: 360px) {
 .law-home #globalnavi .mainlinks li { width: 49.5%; }
+}
+
+#main #law-announcements {
+    border-top: 3px solid rgb(134, 14, 3);
+    border-bottom: 3px solid rgb(134, 14, 3);
+} 
+#main #law-announcements h1 {
+    background: #680A01 url(/img/noise.png) repeat 0 0;
 }
