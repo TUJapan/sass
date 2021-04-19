@@ -1,14 +1,14 @@
 /**
  * Styles for only Cont-ed section
- * Last updated by: Yuka Onitsuka 2020-11-17
+ * Last updated by: Yuka Onitsuka 2021-04-14
  */
 
 
 /***
  * Early-bird and FTUJ price settings - can only display 1 at a time
  ***/
-.ebird { color: red; } /* early-bird [default] color: red; / [off] display: none; */
-.ftuj { display: none; } /* ftuj [default] display: none; / [on] color: red; */
+.ebird { display: none; } /* early-bird [default] color: red; / [off] display: none; */
+.ftuj { color: red; } /* ftuj [default] display: none; / [on] color: red; */
 .onlinecf { display: none; } /* display for online discount price */
 
 /***
